@@ -1,30 +1,22 @@
-
+import './AccountSummary.css';
 
 function AccountSummary({data}) {
 
-    const total = data ? `${data.map(amt => amt.amount).reduce((prev, cur) => prev.amount + cur.amount, 0)}` : 'asdf';
+    const total = new Intl.NumberFormat(navigator.languages[0], { style: 'currency', currency: 'USD'}).format(    
+        data.map(amt => amt.amount).reduce((prev, cur) => prev + cur, 0)
+    )
+    
+    const renderAccount = <div>{total}</div>
 
-
-    // const renderAccount = <div>{total}</div>
-
-    // const renderAccount = data.map(account => {
-    //     return (
-    //         <div key={account.date}>
-    //             <div>{data ? account.date : 'fetching...'}</div>
-    //             <div>{data ? `$ ${account.amount.toFixed(2)}` : undefined}</div>
-    //         </div>
-            
-    //     )
-    // })
-
-
-    return <div>{data.map(amt => amt.amount).reduce((prev, cur) => prev.amount + cur.amount, 0)}</div>
+    return (
+        <section className="account-summary">
+            <div className='summary'>
+                <header className="summary__header">My balance</header>
+                <div className="summary__detail">{renderAccount}</div>
+            </div>
+            <div className="logo"></div>    
+        </section>
+    )
 }
 
 export default AccountSummary;
-
-
-
-
-
-// get value to show up.......

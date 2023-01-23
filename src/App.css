@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-brown: hsl(25, 47%, 15%);
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+@font-face {
+    font-family: "DM-SansRegular";
+    src: local("DM-SansRegular"),
+        url("./fonts/DM-Sans/DMSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DM-SansBold";
+    src: local("DM-SansBold"),
+        url("./fonts/DM-Sans/DMSans-Bold.ttf");
+    font-weight: 700;
+}
+
+html {
+    font-size: 62.5%; /*normalize 1rem to 10px */
+}
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-pale-orange); 
+    height: 100vh;
+
+    width: 100%;
+    font-family: 'DM-SansRegular';
+    font-size: 1.4rem;
+    padding: 1.5rem;
+}
+
+
+
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
+
+### Neutral
+
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 700 */
