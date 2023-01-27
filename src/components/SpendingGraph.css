@@ -1,0 +1,26 @@
+.graph__container {
+    margin-bottom: 4rem;
+}
+
+.graph__header {
+    font-size: 2.6rem;
+    font-family: 'DM-SansBold';
+}
+
+.graph__canvas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    height: 100%;
+    width: 100%;
+
+    /* background-color: magenta; */
+}
+
+.graph-bar-height {
+    width: 2rem;
+    height: 80%;
+    background-color: var(--soft-red);
+    border-radius: .25rem;
+}

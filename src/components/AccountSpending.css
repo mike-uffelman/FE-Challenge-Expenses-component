@@ -1,0 +1,18 @@
+.spending__container {
+    position: relative;;
+    width: 100%;
+    padding: 2.2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+    background-color: var(--very-pale-orange);
+
+}
+
+/* .spending__divider {
+    position: absolute;
+    z-index: 9999;
+    height: .25rem;
+    width: 10rem;
+    background-color: var(--very-pale-orange);
+} */

@@ -1,128 +1,3634 @@
 {
   "transactions": [
     {
-      "date": "2022-07-01T04:00:00.000Z",
-      "amount": 120.00
+      "date": "2022-01-15T03:09:36.462Z",
+      "amount": 550.82,
+      "vendor": "Zulauf Inc",
+      "category": "Electronics"
     },
     {
-      "date": "2022-07-02T04:00:00.000Z",
-      "amount": 30.45
+      "date": "2022-01-26T12:49:08.902Z",
+      "amount": 62.46,
+      "vendor": "Emmerich, Walker and McClure",
+      "category": "Garden"
     },
     {
-      "date": "2022-07-03T04:00:00.000Z",
-      "amount": 2.05
+      "date": "2021-03-14T22:32:30.999Z",
+      "amount": 48.61,
+      "vendor": "Vandervort and Sons",
+      "category": "Tools"
     },
     {
-      "date": "2022-07-04T04:00:00.000Z",
-      "amount": 300.66
+      "date": "2021-10-12T17:48:51.795Z",
+      "amount": 952.47,
+      "vendor": "Moore LLC",
+      "category": "Electronics"
     },
     {
-      "date": "2022-07-05T04:00:00.000Z",
-      "amount": 10.07
+      "date": "2022-03-07T18:59:15.143Z",
+      "amount": 994.49,
+      "vendor": "Hilll LLC",
+      "category": "Books"
     },
     {
-    "date": "2022-07-06T04:00:00.000Z",
-    "amount": 40.30
+      "date": "2021-08-21T13:11:07.858Z",
+      "amount": 774.91,
+      "vendor": "Parker, Yundt and Luettgen",
+      "category": "Grocery"
     },
     {
-    "date": "2022-07-07T04:00:00.000Z",
-    "amount": 644.29
+      "date": "2021-08-14T17:29:02.455Z",
+      "amount": 13.93,
+      "vendor": "Walter - Cummings",
+      "category": "Books"
     },
     {
-    "date": "2022-07-08T04:00:00.000Z",
-    "amount": 12.43
+      "date": "2021-12-29T20:53:34.914Z",
+      "amount": 45.31,
+      "vendor": "Beer, Rohan and Kris",
+      "category": "Health"
     },
     {
-    "date": "2022-07-09T04:00:00.000Z",
-    "amount": 39.00
+      "date": "2021-05-01T21:27:12.026Z",
+      "amount": 435.9,
+      "vendor": "Mueller - Kutch",
+      "category": "Industrial"
     },
     {
-    "date": "2022-07-10T04:00:00.000Z",
-    "amount": 4.99
+      "date": "2021-06-12T00:36:00.780Z",
+      "amount": 817.22,
+      "vendor": "Grady Inc",
+      "category": "Industrial"
     },
     {
-    "date": "2022-07-11T04:00:00.000Z",
-    "amount": 22.45
+      "date": "2022-09-15T08:14:57.913Z",
+      "amount": 328.04,
+      "vendor": "Harvey - McGlynn",
+      "category": "Jewelery"
     },
     {
-    "date": "2022-07-12T04:00:00.000Z",
-    "amount": 54.67
+      "date": "2022-08-19T15:40:11.503Z",
+      "amount": 739.74,
+      "vendor": "Runolfsdottir - Donnelly",
+      "category": "Home"
     },
     {
-    "date": "2022-07-13T04:00:00.000Z",
-    "amount": 899.34
+      "date": "2021-09-25T10:16:08.334Z",
+      "amount": 622.82,
+      "vendor": "Gutmann, Davis and Ryan",
+      "category": "Shoes"
     },
     {
-    "date": "2022-07-14T04:00:00.000Z",
-    "amount": 0.00
+      "date": "2021-06-18T18:32:33.207Z",
+      "amount": 406.52,
+      "vendor": "Leuschke LLC",
+      "category": "Books"
     },
     {
-    "date": "2022-07-15T04:00:00.000Z",
-    "amount": 12.44
+      "date": "2022-07-25T09:06:41.879Z",
+      "amount": 682.17,
+      "vendor": "Hammes, Connelly and Kutch",
+      "category": "Baby"
     },
     {
-    "date": "2022-07-16T04:00:00.000Z",
-    "amount": 23.43
+      "date": "2021-11-10T18:08:58.658Z",
+      "amount": 999.25,
+      "vendor": "Barton and Sons",
+      "category": "Automotive"
     },
     {
-    "date": "2022-07-17T04:00:00.000Z",
-    "amount": 54.89
+      "date": "2022-09-03T15:32:21.508Z",
+      "amount": 660.07,
+      "vendor": "Kessler, Fay and Lebsack",
+      "category": "Grocery"
     },
     {
-    "date": "2022-07-18T04:00:00.000Z",
-    "amount": 89.43
+      "date": "2021-05-03T17:22:40.012Z",
+      "amount": 130.69,
+      "vendor": "Fisher, Stanton and Pollich",
+      "category": "Electronics"
     },
     {
-    "date": "2022-07-19T04:00:00.000Z",
-    "amount": 41.54
+      "date": "2021-09-28T02:54:05.696Z",
+      "amount": 372.62,
+      "vendor": "Conn LLC",
+      "category": "Clothing"
     },
     {
-    "date": "2022-07-20T04:00:00.000Z",
-    "amount": 1.67
+      "date": "2021-03-25T18:35:52.915Z",
+      "amount": 815.24,
+      "vendor": "Steuber Inc",
+      "category": "Clothing"
     },
     {
-    "date": "2022-07-21T04:00:00.000Z",
-    "amount": 0.00
+      "date": "2022-06-23T20:18:36.482Z",
+      "amount": 486.61,
+      "vendor": "Ziemann, Wisozk and Prohaska",
+      "category": "Toys"
     },
     {
-    "date": "2022-07-22T04:00:00.000Z",
-    "amount": 33.51
+      "date": "2021-03-13T14:03:40.601Z",
+      "amount": 215.15,
+      "vendor": "Wisoky Inc",
+      "category": "Baby"
     },
     {
-    "date": "2022-07-23T04:00:00.000Z",
-    "amount": 6.99
+      "date": "2021-12-08T11:36:52.143Z",
+      "amount": 36.38,
+      "vendor": "Jacobi Inc",
+      "category": "Health"
     },
     {
-    "date": "2022-07-24T04:00:00.000Z",
-    "amount": 12.87
+      "date": "2021-07-17T02:07:19.899Z",
+      "amount": 175.98,
+      "vendor": "Stiedemann Group",
+      "category": "Industrial"
     },
     {
-    "date": "2022-07-25T04:00:00.000Z",
-    "amount": 33.54
+      "date": "2021-10-11T20:54:44.722Z",
+      "amount": 374.19,
+      "vendor": "Bogisich - Christiansen",
+      "category": "Tools"
     },
     {
-    "date": "2022-07-26T04:00:00.000Z",
-    "amount": 87.78
+      "date": "2021-08-03T20:03:43.095Z",
+      "amount": 960.64,
+      "vendor": "Kemmer, Rosenbaum and Treutel",
+      "category": "Games"
     },
     {
-    "date": "2022-07-27T04:00:00.000Z",
-    "amount": 99.99
+      "date": "2022-07-07T19:23:47.022Z",
+      "amount": 277.21,
+      "vendor": "Flatley, DuBuque and Klocko",
+      "category": "Outdoors"
     },
     {
-    "date": "2022-07-28T04:00:00.000Z",
-    "amount": 33.01
+      "date": "2022-12-05T01:17:55.877Z",
+      "amount": 741.5,
+      "vendor": "Huels, Rutherford and Kiehn",
+      "category": "Grocery"
     },
     {
-    "date": "2022-07-29T04:00:00.000Z",
-    "amount": 1.99
+      "date": "2022-10-02T03:37:49.835Z",
+      "amount": 8.23,
+      "vendor": "Graham, Toy and Runte",
+      "category": "Beauty"
     },
     {
-    "date": "2022-07-30T04:00:00.000Z",
-    "amount": 24.58
+      "date": "2021-11-26T09:59:59.589Z",
+      "amount": 398.97,
+      "vendor": "Zemlak Inc",
+      "category": "Movies"
     },
     {
-    "data": "2022-07-31T04:00:00.000Z", 
-    "amount": 91.44
+      "date": "2021-12-16T22:35:34.262Z",
+      "amount": 488.38,
+      "vendor": "Blanda and Sons",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-10-25T16:38:14.892Z",
+      "amount": 34.51,
+      "vendor": "Walter - Weissnat",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-10-13T05:15:29.579Z",
+      "amount": 73.57,
+      "vendor": "Barrows Group",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-03-16T03:21:47.500Z",
+      "amount": 98.6,
+      "vendor": "Flatley Inc",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-03-03T14:11:12.853Z",
+      "amount": 26.64,
+      "vendor": "Sauer, Kshlerin and Rau",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-03-21T08:09:12.916Z",
+      "amount": 45.57,
+      "vendor": "Balistreri and Sons",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-02-12T14:58:33.973Z",
+      "amount": 292.09,
+      "vendor": "Kuhlman - Davis",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-12-05T01:35:36.426Z",
+      "amount": 603.45,
+      "vendor": "Waelchi, Emmerich and Jakubowski",
+      "category": "Games"
+    },
+    {
+      "date": "2021-02-06T22:54:09.800Z",
+      "amount": 500.65,
+      "vendor": "Kuphal, Ortiz and Murazik",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-06-24T17:11:33.259Z",
+      "amount": 507.29,
+      "vendor": "Wisozk, Kihn and Romaguera",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-09-20T19:28:51.352Z",
+      "amount": 743.41,
+      "vendor": "Heaney LLC",
+      "category": "Movies"
+    },
+    {
+      "date": "2023-01-18T13:26:03.110Z",
+      "amount": 546.32,
+      "vendor": "Reynolds - Feil",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-04-28T12:43:14.264Z",
+      "amount": 302.08,
+      "vendor": "Waters Group",
+      "category": "Music"
+    },
+    {
+      "date": "2022-12-19T07:21:28.097Z",
+      "amount": 710.56,
+      "vendor": "Price - Powlowski",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-02-09T17:10:47.539Z",
+      "amount": 268.47,
+      "vendor": "Maggio Group",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-06-06T23:36:15.290Z",
+      "amount": 668.13,
+      "vendor": "Upton Group",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-09-19T15:00:25.861Z",
+      "amount": 7.49,
+      "vendor": "Hackett, Smith and Ritchie",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-11-30T18:46:10.440Z",
+      "amount": 447.41,
+      "vendor": "Hudson Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-06-06T10:44:56.231Z",
+      "amount": 798.88,
+      "vendor": "Klocko, O'Connell and Parisian",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-01-08T06:42:41.705Z",
+      "amount": 764.42,
+      "vendor": "Carroll - Lowe",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-01-27T07:20:04.814Z",
+      "amount": 128.32,
+      "vendor": "Turner, Pfannerstill and Legros",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-08-03T01:42:15.985Z",
+      "amount": 573.31,
+      "vendor": "Jacobson - Sawayn",
+      "category": "Games"
+    },
+    {
+      "date": "2022-05-07T18:23:03.500Z",
+      "amount": 603.91,
+      "vendor": "O'Conner Group",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-01-31T07:15:46.654Z",
+      "amount": 899.46,
+      "vendor": "Zieme, Sporer and Gottlieb",
+      "category": "Health"
+    },
+    {
+      "date": "2022-11-01T00:08:35.484Z",
+      "amount": 623.75,
+      "vendor": "Daniel - Feeney",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-09-18T17:59:13.648Z",
+      "amount": 453.98,
+      "vendor": "Willms - Kohler",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-01-18T23:04:55.721Z",
+      "amount": 9.8,
+      "vendor": "Wilkinson Group",
+      "category": "Games"
+    },
+    {
+      "date": "2022-08-19T22:11:44.230Z",
+      "amount": 209.72,
+      "vendor": "Gutkowski Group",
+      "category": "Industrial"
+    },
+    {
+      "date": "2023-01-05T17:02:37.099Z",
+      "amount": 248.71,
+      "vendor": "Erdman and Sons",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-06-19T18:09:38.277Z",
+      "amount": 586.63,
+      "vendor": "Beatty - Dibbert",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-06-01T06:07:21.886Z",
+      "amount": 689.78,
+      "vendor": "Berge LLC",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-02-04T11:53:32.604Z",
+      "amount": 42.48,
+      "vendor": "Robel, Blanda and Nader",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-08-19T05:01:57.192Z",
+      "amount": 166.7,
+      "vendor": "Hand - Upton",
+      "category": "Books"
+    },
+    {
+      "date": "2021-04-06T01:45:50.886Z",
+      "amount": 530.67,
+      "vendor": "Renner - Brakus",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-09-28T15:20:21.959Z",
+      "amount": 942.96,
+      "vendor": "Miller Group",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-10-07T01:42:42.113Z",
+      "amount": 299.16,
+      "vendor": "VonRueden and Sons",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-12-24T15:27:22.000Z",
+      "amount": 318.44,
+      "vendor": "Baumbach - Adams",
+      "category": "Home"
+    },
+    {
+      "date": "2021-03-12T19:29:37.009Z",
+      "amount": 30.25,
+      "vendor": "Ward - Hessel",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-03-24T22:38:51.240Z",
+      "amount": 9.72,
+      "vendor": "Stiedemann Inc",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-03-17T02:51:37.110Z",
+      "amount": 86.43,
+      "vendor": "Marvin, Kertzmann and Ondricka",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-01-06T13:22:51.838Z",
+      "amount": 15.03,
+      "vendor": "Keebler - Pfeffer",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-07-19T09:36:27.562Z",
+      "amount": 87.67,
+      "vendor": "Glover Group",
+      "category": "Home"
+    },
+    {
+      "date": "2022-06-22T18:56:58.809Z",
+      "amount": 64.04,
+      "vendor": "Schultz - Johns",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-01-22T16:04:07.532Z",
+      "amount": 138.68,
+      "vendor": "Gutkowski - Jones",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-07-13T00:43:38.063Z",
+      "amount": 887.2,
+      "vendor": "Vandervort and Sons",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-07-25T18:12:49.681Z",
+      "amount": 364.84,
+      "vendor": "Hills - Jaskolski",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-10-29T13:39:29.871Z",
+      "amount": 997.3,
+      "vendor": "Bartoletti - Rau",
+      "category": "Music"
+    },
+    {
+      "date": "2022-07-23T10:00:18.145Z",
+      "amount": 423.63,
+      "vendor": "Grady, Emmerich and Goyette",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-08-28T21:47:55.849Z",
+      "amount": 962.37,
+      "vendor": "Wuckert Inc",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-01-11T10:11:55.900Z",
+      "amount": 8.99,
+      "vendor": "Boyer - Wintheiser",
+      "category": "Games"
+    },
+    {
+      "date": "2021-03-25T01:53:04.137Z",
+      "amount": 56.93,
+      "vendor": "Schamberger - Lubowitz",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-05-13T22:36:19.639Z",
+      "amount": 83.24,
+      "vendor": "Halvorson - Jacobs",
+      "category": "Games"
+    },
+    {
+      "date": "2022-06-02T03:30:35.632Z",
+      "amount": 3.83,
+      "vendor": "Prosacco, Stanton and Price",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-05-16T01:09:56.611Z",
+      "amount": 187.3,
+      "vendor": "McDermott - Langosh",
+      "category": "Home"
+    },
+    {
+      "date": "2021-04-08T00:43:09.872Z",
+      "amount": 82.89,
+      "vendor": "Huels - Stokes",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-01-11T07:45:29.115Z",
+      "amount": 728.96,
+      "vendor": "Koepp LLC",
+      "category": "Industrial"
+    },
+    {
+      "date": "2023-01-09T20:44:42.421Z",
+      "amount": 789.7,
+      "vendor": "Moen - Bayer",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-08-15T07:11:32.242Z",
+      "amount": 907.24,
+      "vendor": "Lubowitz - Kovacek",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-08-13T14:45:28.081Z",
+      "amount": 591.18,
+      "vendor": "Bergstrom, Kirlin and Fisher",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-03-06T11:58:26.489Z",
+      "amount": 663.43,
+      "vendor": "McCullough LLC",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-05-27T08:21:33.899Z",
+      "amount": 448.07,
+      "vendor": "Gerlach LLC",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-01-16T19:01:06.369Z",
+      "amount": 626.03,
+      "vendor": "Koch - Kuhlman",
+      "category": "Books"
+    },
+    {
+      "date": "2022-09-10T10:09:15.856Z",
+      "amount": 117.28,
+      "vendor": "Pacocha, McCullough and Funk",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-04-21T11:03:46.119Z",
+      "amount": 930.91,
+      "vendor": "Gislason and Sons",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-07-20T10:56:33.669Z",
+      "amount": 855.31,
+      "vendor": "Gleichner - DuBuque",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-10-21T07:16:27.746Z",
+      "amount": 27.93,
+      "vendor": "Marvin - Jerde",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-09-25T07:03:08.165Z",
+      "amount": 353.16,
+      "vendor": "Maggio and Sons",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-04-19T11:32:26.890Z",
+      "amount": 774.49,
+      "vendor": "Schoen - Kuhic",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-07-28T23:30:34.959Z",
+      "amount": 604.39,
+      "vendor": "Nicolas, Weimann and Wyman",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-08-06T19:06:13.499Z",
+      "amount": 558.12,
+      "vendor": "Maggio, Lakin and Osinski",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-03-30T09:58:01.574Z",
+      "amount": 729.81,
+      "vendor": "Paucek, Runte and Hagenes",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-08-16T00:23:05.743Z",
+      "amount": 799.79,
+      "vendor": "Von Group",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-08-23T18:57:31.603Z",
+      "amount": 64.42,
+      "vendor": "Raynor, Von and Dickens",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-07-03T05:01:39.960Z",
+      "amount": 484.78,
+      "vendor": "Zieme Group",
+      "category": "Health"
+    },
+    {
+      "date": "2022-03-17T21:48:06.694Z",
+      "amount": 739.86,
+      "vendor": "Roob Group",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-08-28T16:53:40.280Z",
+      "amount": 385.04,
+      "vendor": "Rippin - O'Hara",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-01-19T03:44:30.622Z",
+      "amount": 329.78,
+      "vendor": "Daniel - Beer",
+      "category": "Books"
+    },
+    {
+      "date": "2021-09-29T21:39:21.790Z",
+      "amount": 76.91,
+      "vendor": "Cummings LLC",
+      "category": "Music"
+    },
+    {
+      "date": "2021-04-03T20:38:26.382Z",
+      "amount": 817.72,
+      "vendor": "Brown, Fisher and Smitham",
+      "category": "Music"
+    },
+    {
+      "date": "2021-01-28T01:51:06.342Z",
+      "amount": 88.15,
+      "vendor": "Boyer - Carter",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-09-11T07:51:49.559Z",
+      "amount": 106.44,
+      "vendor": "Crona Inc",
+      "category": "Home"
+    },
+    {
+      "date": "2021-06-03T00:58:20.631Z",
+      "amount": 452.14,
+      "vendor": "Leuschke, Quigley and Prohaska",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-01-10T05:35:49.452Z",
+      "amount": 906.65,
+      "vendor": "Weissnat, Will and Johns",
+      "category": "Home"
+    },
+    {
+      "date": "2021-01-07T05:13:34.655Z",
+      "amount": 288.58,
+      "vendor": "Towne - Nitzsche",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-04-05T19:15:11.387Z",
+      "amount": 325.38,
+      "vendor": "Stoltenberg, Schoen and Herzog",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-04-24T21:35:02.495Z",
+      "amount": 78.75,
+      "vendor": "Renner - Goodwin",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-08-15T21:56:03.993Z",
+      "amount": 937.2,
+      "vendor": "Ullrich, Jaskolski and Bernier",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-09-04T16:04:44.928Z",
+      "amount": 20.42,
+      "vendor": "Schaden - Olson",
+      "category": "Home"
+    },
+    {
+      "date": "2022-09-22T10:54:07.933Z",
+      "amount": 50.28,
+      "vendor": "Schoen, Spinka and Balistreri",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-11-14T21:03:31.615Z",
+      "amount": 6.13,
+      "vendor": "Beatty - Kling",
+      "category": "Home"
+    },
+    {
+      "date": "2023-01-04T11:16:13.408Z",
+      "amount": 78.29,
+      "vendor": "Hyatt LLC",
+      "category": "Books"
+    },
+    {
+      "date": "2021-06-21T21:14:51.375Z",
+      "amount": 25.53,
+      "vendor": "Orn, Kirlin and Emard",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-11-09T17:18:55.108Z",
+      "amount": 991.42,
+      "vendor": "Mills Group",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-11-07T07:09:33.249Z",
+      "amount": 943.16,
+      "vendor": "Kunze Group",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-04-12T17:04:52.005Z",
+      "amount": 107.51,
+      "vendor": "Tromp, Gleichner and Rohan",
+      "category": "Tools"
+    },
+    {
+      "date": "2023-01-09T22:33:44.470Z",
+      "amount": 486.35,
+      "vendor": "Dare Group",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-12-15T04:56:43.825Z",
+      "amount": 96.3,
+      "vendor": "Ebert, Gutmann and Beahan",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-04-30T00:32:55.689Z",
+      "amount": 1.33,
+      "vendor": "Mitchell - Heller",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-09-05T08:37:55.435Z",
+      "amount": 746.18,
+      "vendor": "Bauch - Nitzsche",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-08-10T03:39:34.206Z",
+      "amount": 795.59,
+      "vendor": "Simonis LLC",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-06-25T20:42:53.186Z",
+      "amount": 184.39,
+      "vendor": "Homenick, Schuppe and Beier",
+      "category": "Health"
+    },
+    {
+      "date": "2021-07-26T03:06:26.008Z",
+      "amount": 800.52,
+      "vendor": "Schowalter LLC",
+      "category": "Books"
+    },
+    {
+      "date": "2021-07-05T07:11:17.312Z",
+      "amount": 402.92,
+      "vendor": "Schuster - Rogahn",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-08-17T13:03:19.992Z",
+      "amount": 31.66,
+      "vendor": "Heathcote, Tremblay and Kunde",
+      "category": "Music"
+    },
+    {
+      "date": "2022-06-07T14:36:10.265Z",
+      "amount": 982.55,
+      "vendor": "Leffler and Sons",
+      "category": "Computers"
+    },
+    {
+      "date": "2021-09-30T23:28:34.902Z",
+      "amount": 8.46,
+      "vendor": "Stark - Jerde",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-12-30T20:10:09.320Z",
+      "amount": 24.24,
+      "vendor": "Beahan Group",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-10-10T01:22:58.933Z",
+      "amount": 20.42,
+      "vendor": "Parker Inc",
+      "category": "Games"
+    },
+    {
+      "date": "2021-05-27T10:14:04.172Z",
+      "amount": 324.46,
+      "vendor": "Dietrich Inc",
+      "category": "Grocery"
+    },
+    {
+      "date": "2023-01-04T02:05:32.457Z",
+      "amount": 45.25,
+      "vendor": "Mante Inc",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-07-09T18:49:34.701Z",
+      "amount": 209.59,
+      "vendor": "Pagac Group",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-09-23T03:07:56.062Z",
+      "amount": 27.89,
+      "vendor": "Borer - Doyle",
+      "category": "Home"
+    },
+    {
+      "date": "2021-07-06T16:33:33.622Z",
+      "amount": 963.33,
+      "vendor": "Jast - Carroll",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-04-15T02:34:13.898Z",
+      "amount": 62.19,
+      "vendor": "Gottlieb LLC",
+      "category": "Games"
+    },
+    {
+      "date": "2022-07-22T19:53:27.205Z",
+      "amount": 786.57,
+      "vendor": "Rowe LLC",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-08-29T21:07:14.716Z",
+      "amount": 36.89,
+      "vendor": "Waters - Zieme",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-08-02T05:33:40.534Z",
+      "amount": 251.1,
+      "vendor": "Hirthe and Sons",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-01-11T10:20:51.133Z",
+      "amount": 497.32,
+      "vendor": "Hane - Wintheiser",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-07-20T05:25:16.286Z",
+      "amount": 432.95,
+      "vendor": "Cummerata Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-02-06T02:36:35.258Z",
+      "amount": 423.01,
+      "vendor": "Grimes - Aufderhar",
+      "category": "Health"
+    },
+    {
+      "date": "2022-05-24T12:43:02.797Z",
+      "amount": 612,
+      "vendor": "O'Connell - Schmidt",
+      "category": "Books"
+    },
+    {
+      "date": "2021-11-14T07:39:42.584Z",
+      "amount": 277.81,
+      "vendor": "Ruecker Inc",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-01-17T07:36:49.769Z",
+      "amount": 940,
+      "vendor": "Will - Leffler",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-02-09T13:43:35.210Z",
+      "amount": 496.49,
+      "vendor": "Satterfield, Cronin and Mohr",
+      "category": "Health"
+    },
+    {
+      "date": "2022-07-19T23:57:06.580Z",
+      "amount": 151.02,
+      "vendor": "Johnston - Bruen",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-06-29T17:09:32.646Z",
+      "amount": 350.63,
+      "vendor": "Boyle - Padberg",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-08-04T07:01:17.442Z",
+      "amount": 111.4,
+      "vendor": "O'Kon - Leuschke",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-12-06T10:07:26.544Z",
+      "amount": 799.88,
+      "vendor": "Bins, Hyatt and Lindgren",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-03-06T08:02:28.958Z",
+      "amount": 751.65,
+      "vendor": "Trantow and Sons",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-02-15T12:56:34.898Z",
+      "amount": 729.38,
+      "vendor": "Becker, Roberts and Turner",
+      "category": "Music"
+    },
+    {
+      "date": "2021-10-06T23:18:28.087Z",
+      "amount": 442.26,
+      "vendor": "Berge, Beatty and Luettgen",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-08-29T21:30:13.007Z",
+      "amount": 241.23,
+      "vendor": "Wolf, Kshlerin and Batz",
+      "category": "Home"
+    },
+    {
+      "date": "2022-12-10T14:38:47.747Z",
+      "amount": 99.78,
+      "vendor": "Murray, Kerluke and Wiegand",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-09-15T11:38:27.644Z",
+      "amount": 36.78,
+      "vendor": "Tillman, Bayer and Frami",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-02-05T06:58:01.774Z",
+      "amount": 25.93,
+      "vendor": "Veum - Kuhn",
+      "category": "Music"
+    },
+    {
+      "date": "2021-11-27T01:22:00.598Z",
+      "amount": 20.38,
+      "vendor": "Spencer LLC",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-10-01T07:11:26.194Z",
+      "amount": 56.1,
+      "vendor": "Cormier - Runte",
+      "category": "Books"
+    },
+    {
+      "date": "2022-08-29T11:25:45.569Z",
+      "amount": 408.89,
+      "vendor": "Thiel - Volkman",
+      "category": "Books"
+    },
+    {
+      "date": "2022-02-01T11:18:07.550Z",
+      "amount": 247.57,
+      "vendor": "Thompson - Marvin",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-04-22T22:34:29.148Z",
+      "amount": 61.02,
+      "vendor": "Botsford, Abshire and Nader",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-01-02T22:47:25.262Z",
+      "amount": 11.05,
+      "vendor": "Maggio Group",
+      "category": "Shoes"
+    },
+    {
+      "date": "2023-01-19T04:57:56.955Z",
+      "amount": 64,
+      "vendor": "Thompson - Roberts",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-06-26T02:40:02.600Z",
+      "amount": 67.27,
+      "vendor": "McGlynn - Dare",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-05-07T11:21:30.634Z",
+      "amount": 440.36,
+      "vendor": "Zieme and Sons",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-04-26T03:12:26.621Z",
+      "amount": 503.05,
+      "vendor": "Bartoletti, Little and Kulas",
+      "category": "Games"
+    },
+    {
+      "date": "2022-07-11T08:22:47.429Z",
+      "amount": 546.01,
+      "vendor": "Boehm, Cole and Bashirian",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-05-18T23:19:31.283Z",
+      "amount": 162.5,
+      "vendor": "Shanahan and Sons",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-12-09T02:30:23.753Z",
+      "amount": 285.54,
+      "vendor": "Tromp Group",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-01-20T07:47:27.700Z",
+      "amount": 613.71,
+      "vendor": "Schowalter - Flatley",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-03-04T22:31:00.147Z",
+      "amount": 763.22,
+      "vendor": "Hickle, Hessel and Walter",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-03-26T22:21:07.344Z",
+      "amount": 71.8,
+      "vendor": "Morissette - Goodwin",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-08-24T08:09:59.930Z",
+      "amount": 156.44,
+      "vendor": "Kunze - Kovacek",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-07-20T18:46:30.174Z",
+      "amount": 1.2,
+      "vendor": "Parisian, Ortiz and Breitenberg",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-06-27T14:15:17.372Z",
+      "amount": 8,
+      "vendor": "Ernser - Labadie",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-02-08T06:33:09.720Z",
+      "amount": 932.6,
+      "vendor": "Glover Inc",
+      "category": "Sports"
+    },
+    {
+      "date": "2023-01-11T12:41:41.812Z",
+      "amount": 157.67,
+      "vendor": "Pollich - Krajcik",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-02-04T00:10:04.424Z",
+      "amount": 435.2,
+      "vendor": "Kunde - Nader",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-07-04T12:00:13.485Z",
+      "amount": 488.09,
+      "vendor": "Pacocha, Fay and Armstrong",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-01-07T10:33:11.719Z",
+      "amount": 846.41,
+      "vendor": "McClure LLC",
+      "category": "Books"
+    },
+    {
+      "date": "2022-04-27T04:46:19.427Z",
+      "amount": 636.74,
+      "vendor": "Kihn - Terry",
+      "category": "Health"
+    },
+    {
+      "date": "2022-03-28T02:05:25.343Z",
+      "amount": 688.73,
+      "vendor": "Kshlerin - Braun",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-03-14T15:51:10.574Z",
+      "amount": 961.01,
+      "vendor": "Champlin - Reichert",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-11-03T23:26:36.525Z",
+      "amount": 33.42,
+      "vendor": "Wintheiser - Krajcik",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-05-27T12:46:44.044Z",
+      "amount": 1.09,
+      "vendor": "Doyle, Ortiz and Mann",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-11-29T19:02:16.869Z",
+      "amount": 543.57,
+      "vendor": "Strosin, Rodriguez and Larkin",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-08-19T09:31:40.724Z",
+      "amount": 521.98,
+      "vendor": "Monahan LLC",
+      "category": "Grocery"
+    },
+    {
+      "date": "2023-01-21T10:06:20.288Z",
+      "amount": 319.84,
+      "vendor": "Cartwright, Heaney and Spinka",
+      "category": "Home"
+    },
+    {
+      "date": "2022-11-20T08:56:06.331Z",
+      "amount": 859.52,
+      "vendor": "Wunsch and Sons",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-05-04T22:01:29.387Z",
+      "amount": 501.52,
+      "vendor": "Hagenes and Sons",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-07-05T06:04:35.479Z",
+      "amount": 793.47,
+      "vendor": "Crooks, Swaniawski and Stracke",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-11-20T18:33:15.099Z",
+      "amount": 86.3,
+      "vendor": "Quigley, Stiedemann and Smith",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-12-19T05:35:24.347Z",
+      "amount": 922.33,
+      "vendor": "Kutch - Hoppe",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-07-07T13:23:18.823Z",
+      "amount": 652.06,
+      "vendor": "Rutherford Group",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-10-13T02:27:05.643Z",
+      "amount": 525.31,
+      "vendor": "Dietrich Group",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-01-07T17:13:30.865Z",
+      "amount": 5.98,
+      "vendor": "Kilback and Sons",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-12-28T03:25:06.896Z",
+      "amount": 819.64,
+      "vendor": "Maggio Group",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-11-07T20:00:02.945Z",
+      "amount": 829.74,
+      "vendor": "DuBuque - Shanahan",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-04-03T14:43:24.010Z",
+      "amount": 404.49,
+      "vendor": "Skiles - Gulgowski",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-11-19T02:07:40.956Z",
+      "amount": 559.23,
+      "vendor": "Mueller Inc",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-06-21T08:43:41.198Z",
+      "amount": 430.62,
+      "vendor": "Funk Inc",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-05-05T22:29:46.617Z",
+      "amount": 611.57,
+      "vendor": "Lowe - Yundt",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-08-04T00:26:24.960Z",
+      "amount": 943.66,
+      "vendor": "Flatley Inc",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-02-02T02:40:45.374Z",
+      "amount": 644.8,
+      "vendor": "Yost, Koepp and Breitenberg",
+      "category": "Health"
+    },
+    {
+      "date": "2021-09-11T16:09:36.593Z",
+      "amount": 171.78,
+      "vendor": "Robel - Mante",
+      "category": "Health"
+    },
+    {
+      "date": "2021-07-24T10:55:48.830Z",
+      "amount": 182.02,
+      "vendor": "Hauck - Heaney",
+      "category": "Home"
+    },
+    {
+      "date": "2022-02-06T14:44:14.045Z",
+      "amount": 261.67,
+      "vendor": "Cronin - West",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-01-27T10:55:15.278Z",
+      "amount": 942.97,
+      "vendor": "Lakin, Hermiston and Pfannerstill",
+      "category": "Books"
+    },
+    {
+      "date": "2021-09-19T01:15:02.398Z",
+      "amount": 240.62,
+      "vendor": "Medhurst, Nienow and Graham",
+      "category": "Books"
+    },
+    {
+      "date": "2021-10-28T21:46:45.843Z",
+      "amount": 238.72,
+      "vendor": "Rutherford, Cremin and Okuneva",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-05-06T04:23:11.953Z",
+      "amount": 953.48,
+      "vendor": "Mitchell LLC",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-04-18T18:38:09.072Z",
+      "amount": 983.55,
+      "vendor": "Grady LLC",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-09-10T02:48:07.046Z",
+      "amount": 814.92,
+      "vendor": "Berge, Shanahan and Zboncak",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-05-10T20:50:50.340Z",
+      "amount": 550.84,
+      "vendor": "Wiza, Douglas and Gutkowski",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-09-06T06:27:47.378Z",
+      "amount": 458.5,
+      "vendor": "Morar, Koelpin and Hane",
+      "category": "Health"
+    },
+    {
+      "date": "2021-09-25T01:45:23.531Z",
+      "amount": 21.86,
+      "vendor": "Parker - Goldner",
+      "category": "Games"
+    },
+    {
+      "date": "2021-04-30T13:01:25.955Z",
+      "amount": 867.59,
+      "vendor": "Conn - Mitchell",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-11-27T16:04:58.583Z",
+      "amount": 814.82,
+      "vendor": "Ankunding - Schuppe",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-02-27T12:18:49.661Z",
+      "amount": 92.2,
+      "vendor": "Raynor - Stark",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-11-11T18:37:29.639Z",
+      "amount": 382.15,
+      "vendor": "Johns Inc",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-03-16T13:27:46.535Z",
+      "amount": 223.95,
+      "vendor": "Reilly Inc",
+      "category": "Books"
+    },
+    {
+      "date": "2022-05-17T20:07:34.591Z",
+      "amount": 961.92,
+      "vendor": "Graham, Wolf and Ruecker",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-11-14T06:46:59.805Z",
+      "amount": 947.18,
+      "vendor": "Kovacek, Rutherford and Littel",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-05-17T04:24:35.558Z",
+      "amount": 757.98,
+      "vendor": "Hickle Inc",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-11-10T02:03:34.047Z",
+      "amount": 571.03,
+      "vendor": "Lubowitz, Sauer and Borer",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-03-24T20:07:07.084Z",
+      "amount": 596.9,
+      "vendor": "Walker, Abshire and Schneider",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-08-27T10:38:43.517Z",
+      "amount": 863.78,
+      "vendor": "Kilback - Ondricka",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-03-18T23:02:45.885Z",
+      "amount": 39.48,
+      "vendor": "Goyette, Walter and Williamson",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-06-19T10:51:09.640Z",
+      "amount": 411.53,
+      "vendor": "Reinger - Robel",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-12-03T13:01:37.292Z",
+      "amount": 438.67,
+      "vendor": "Rempel Group",
+      "category": "Music"
+    },
+    {
+      "date": "2021-10-13T11:57:16.412Z",
+      "amount": 822.05,
+      "vendor": "Ruecker, Fahey and Parisian",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-09-06T21:17:32.779Z",
+      "amount": 7.07,
+      "vendor": "Reichel Group",
+      "category": "Health"
+    },
+    {
+      "date": "2021-01-15T23:04:12.169Z",
+      "amount": 955.21,
+      "vendor": "Gottlieb - Stoltenberg",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-06-23T09:00:49.317Z",
+      "amount": 218.33,
+      "vendor": "Abbott - Harvey",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-08-08T00:40:05.436Z",
+      "amount": 817.3,
+      "vendor": "Tromp - Macejkovic",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-01-28T15:27:30.826Z",
+      "amount": 340.08,
+      "vendor": "Hills - Rau",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-06-17T07:36:51.383Z",
+      "amount": 979.35,
+      "vendor": "Howell - Cruickshank",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-11-12T15:31:39.688Z",
+      "amount": 331.3,
+      "vendor": "Huels - Mraz",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-09-09T14:27:28.981Z",
+      "amount": 770.53,
+      "vendor": "Kertzmann Group",
+      "category": "Health"
+    },
+    {
+      "date": "2021-03-27T07:51:32.179Z",
+      "amount": 212.18,
+      "vendor": "Sauer Inc",
+      "category": "Books"
+    },
+    {
+      "date": "2021-09-15T14:50:07.475Z",
+      "amount": 379.71,
+      "vendor": "Larson - Bode",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-11-12T04:54:09.672Z",
+      "amount": 962.39,
+      "vendor": "Lowe - Marks",
+      "category": "Movies"
+    },
+    {
+      "date": "2023-01-17T16:41:54.719Z",
+      "amount": 305.37,
+      "vendor": "McLaughlin - Maggio",
+      "category": "Books"
+    },
+    {
+      "date": "2022-03-18T21:20:11.196Z",
+      "amount": 81.28,
+      "vendor": "Nikolaus Group",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-01-28T20:46:10.191Z",
+      "amount": 774.92,
+      "vendor": "McKenzie LLC",
+      "category": "Music"
+    },
+    {
+      "date": "2022-03-19T16:09:41.712Z",
+      "amount": 54.75,
+      "vendor": "Greenholt LLC",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-09-17T12:26:48.361Z",
+      "amount": 918.04,
+      "vendor": "Brakus Inc",
+      "category": "Games"
+    },
+    {
+      "date": "2021-11-01T13:26:33.337Z",
+      "amount": 621.79,
+      "vendor": "Berge and Sons",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-01-25T07:39:38.130Z",
+      "amount": 974.67,
+      "vendor": "Watsica Inc",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-10-13T05:12:52.992Z",
+      "amount": 479.23,
+      "vendor": "Gerhold, Watsica and Farrell",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-12-07T21:22:03.778Z",
+      "amount": 63.57,
+      "vendor": "Fahey - Senger",
+      "category": "Music"
+    },
+    {
+      "date": "2021-02-07T01:51:10.477Z",
+      "amount": 162.5,
+      "vendor": "West, Schiller and Pfeffer",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-03-09T06:26:28.781Z",
+      "amount": 474.75,
+      "vendor": "Hirthe - Vandervort",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-04-20T16:56:50.246Z",
+      "amount": 395.61,
+      "vendor": "Block, Streich and Marks",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-08-10T11:21:14.761Z",
+      "amount": 853.1,
+      "vendor": "Keebler - Pagac",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-09-05T02:35:55.295Z",
+      "amount": 965.54,
+      "vendor": "Reinger, Herzog and Jast",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-05-11T18:01:15.789Z",
+      "amount": 772.65,
+      "vendor": "Littel and Sons",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-05-28T15:03:31.765Z",
+      "amount": 661.39,
+      "vendor": "Mosciski, Friesen and Berge",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-01-21T10:45:40.944Z",
+      "amount": 975.45,
+      "vendor": "Ward - Kunde",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-05-08T22:43:37.828Z",
+      "amount": 22.69,
+      "vendor": "Cartwright Group",
+      "category": "Music"
+    },
+    {
+      "date": "2022-01-07T15:26:31.734Z",
+      "amount": 495.56,
+      "vendor": "Ortiz Inc",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-03-19T10:38:15.291Z",
+      "amount": 75.09,
+      "vendor": "Stroman Group",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-08-11T02:38:48.277Z",
+      "amount": 665.91,
+      "vendor": "Hills, Leannon and Hermiston",
+      "category": "Health"
+    },
+    {
+      "date": "2022-01-06T02:53:03.935Z",
+      "amount": 323.41,
+      "vendor": "Von, Goodwin and Legros",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-05-23T19:59:02.711Z",
+      "amount": 241.18,
+      "vendor": "VonRueden - Botsford",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-10-28T10:31:24.892Z",
+      "amount": 732.03,
+      "vendor": "Leannon - Cremin",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-03-09T06:05:56.202Z",
+      "amount": 111.33,
+      "vendor": "Ledner, Carroll and Krajcik",
+      "category": "Music"
+    },
+    {
+      "date": "2021-09-01T13:18:31.355Z",
+      "amount": 749.32,
+      "vendor": "Lockman, Fadel and Walter",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-07-26T16:56:57.469Z",
+      "amount": 490.35,
+      "vendor": "Hyatt, Breitenberg and Balistreri",
+      "category": "Kids"
+    },
+    {
+      "date": "2023-01-13T04:00:58.033Z",
+      "amount": 796.48,
+      "vendor": "Zboncak - Kirlin",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-11-15T23:14:39.582Z",
+      "amount": 372.5,
+      "vendor": "Stiedemann - Marvin",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-11-22T05:50:08.950Z",
+      "amount": 143.92,
+      "vendor": "Vandervort - Grimes",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-01-27T13:55:03.396Z",
+      "amount": 879.31,
+      "vendor": "Kirlin - Friesen",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-11-23T06:48:57.786Z",
+      "amount": 300.85,
+      "vendor": "Kovacek, Harber and Von",
+      "category": "Home"
+    },
+    {
+      "date": "2021-07-24T11:27:14.932Z",
+      "amount": 893.04,
+      "vendor": "Metz, Beahan and Streich",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-08-17T23:17:41.292Z",
+      "amount": 468.56,
+      "vendor": "Adams - Pouros",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-08-14T07:55:20.963Z",
+      "amount": 257.39,
+      "vendor": "Jaskolski, Stroman and Armstrong",
+      "category": "Books"
+    },
+    {
+      "date": "2022-12-30T09:38:14.665Z",
+      "amount": 931.24,
+      "vendor": "Carroll LLC",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-12-01T21:37:36.822Z",
+      "amount": 799.22,
+      "vendor": "Johnson, Hayes and Kessler",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-08-31T08:30:45.409Z",
+      "amount": 697.12,
+      "vendor": "Kris, Armstrong and Huel",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-03-27T01:39:51.014Z",
+      "amount": 116.04,
+      "vendor": "Cummings, Sanford and Volkman",
+      "category": "Grocery"
+    },
+    {
+      "date": "2023-01-08T04:24:59.967Z",
+      "amount": 837.67,
+      "vendor": "Graham and Sons",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-02-04T02:39:45.586Z",
+      "amount": 639.05,
+      "vendor": "Mayer - Howell",
+      "category": "Books"
+    },
+    {
+      "date": "2021-02-26T12:27:57.982Z",
+      "amount": 25.01,
+      "vendor": "Wehner and Sons",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-03-16T16:35:52.914Z",
+      "amount": 956.86,
+      "vendor": "Stracke, Collins and Schinner",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-01-16T17:56:34.158Z",
+      "amount": 827.38,
+      "vendor": "Tremblay Inc",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-09-29T07:27:43.369Z",
+      "amount": 159.59,
+      "vendor": "Gibson LLC",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-03-02T19:30:48.868Z",
+      "amount": 227.86,
+      "vendor": "Tremblay, Denesik and Beier",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-06-19T17:56:13.767Z",
+      "amount": 374.7,
+      "vendor": "Davis Group",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-09-20T02:13:02.941Z",
+      "amount": 38.14,
+      "vendor": "Maggio, Cruickshank and Hammes",
+      "category": "Home"
+    },
+    {
+      "date": "2022-08-20T10:09:07.945Z",
+      "amount": 521,
+      "vendor": "Schmitt, Kertzmann and Ledner",
+      "category": "Computers"
+    },
+    {
+      "date": "2021-12-19T12:20:15.006Z",
+      "amount": 456.51,
+      "vendor": "Jast, Schoen and Wisozk",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-12-30T20:26:58.598Z",
+      "amount": 744.08,
+      "vendor": "Gibson - Anderson",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-07-28T20:53:50.668Z",
+      "amount": 861.5,
+      "vendor": "Batz, Wiegand and Leuschke",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-06-15T09:01:30.878Z",
+      "amount": 229.31,
+      "vendor": "Olson, Dickens and Koss",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-06-08T07:22:51.742Z",
+      "amount": 106.52,
+      "vendor": "Brown, Legros and Runte",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-02-14T23:25:42.614Z",
+      "amount": 86.45,
+      "vendor": "Toy, Murazik and Runolfsson",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-01-24T16:31:56.573Z",
+      "amount": 880.45,
+      "vendor": "Trantow Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-03-15T10:46:35.546Z",
+      "amount": 94.95,
+      "vendor": "Monahan, Collier and Hoppe",
+      "category": "Home"
+    },
+    {
+      "date": "2021-12-17T10:28:31.223Z",
+      "amount": 461.41,
+      "vendor": "Grant LLC",
+      "category": "Computers"
+    },
+    {
+      "date": "2021-09-07T16:00:01.009Z",
+      "amount": 316.13,
+      "vendor": "Strosin, Casper and Boehm",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-11-20T21:28:54.540Z",
+      "amount": 425.65,
+      "vendor": "Parisian, Bode and Wyman",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-02-25T07:38:31.816Z",
+      "amount": 920.74,
+      "vendor": "Torphy, Schmeler and Wolff",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-03-13T13:11:50.502Z",
+      "amount": 593.73,
+      "vendor": "Streich Group",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-10-30T18:04:39.020Z",
+      "amount": 545.17,
+      "vendor": "Kshlerin - Schowalter",
+      "category": "Games"
+    },
+    {
+      "date": "2022-04-23T08:42:58.808Z",
+      "amount": 463.19,
+      "vendor": "Bergnaum - Boyle",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-08-14T12:44:16.236Z",
+      "amount": 228.56,
+      "vendor": "Wintheiser - Flatley",
+      "category": "Games"
+    },
+    {
+      "date": "2022-03-15T16:35:45.613Z",
+      "amount": 220.24,
+      "vendor": "Rosenbaum - Bogan",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-11-05T15:28:03.138Z",
+      "amount": 185.39,
+      "vendor": "Lang - Donnelly",
+      "category": "Health"
+    },
+    {
+      "date": "2021-08-14T04:13:14.720Z",
+      "amount": 910.36,
+      "vendor": "Olson - Koss",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-10-15T13:51:54.356Z",
+      "amount": 770.87,
+      "vendor": "Hettinger, Vandervort and Deckow",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-02-15T12:37:56.486Z",
+      "amount": 308.5,
+      "vendor": "Paucek Inc",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-03-24T23:24:55.343Z",
+      "amount": 363.61,
+      "vendor": "Mosciski, Hudson and Raynor",
+      "category": "Books"
+    },
+    {
+      "date": "2022-08-22T15:38:16.321Z",
+      "amount": 659.07,
+      "vendor": "Schulist - Harber",
+      "category": "Computers"
+    },
+    {
+      "date": "2021-01-28T08:58:38.934Z",
+      "amount": 12.1,
+      "vendor": "McGlynn and Sons",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-08-22T05:12:50.545Z",
+      "amount": 875.31,
+      "vendor": "Ledner, O'Conner and Schuppe",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-12-04T18:01:39.866Z",
+      "amount": 154.94,
+      "vendor": "Little Group",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-02-02T08:06:29.472Z",
+      "amount": 87.74,
+      "vendor": "Stokes - Bergstrom",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-11-15T11:36:25.446Z",
+      "amount": 809.84,
+      "vendor": "Sipes Group",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-07-16T08:31:32.195Z",
+      "amount": 190.05,
+      "vendor": "Mann and Sons",
+      "category": "Home"
+    },
+    {
+      "date": "2021-12-19T11:13:50.301Z",
+      "amount": 569.66,
+      "vendor": "Dach, Hoppe and Breitenberg",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-03-31T05:23:53.815Z",
+      "amount": 172.7,
+      "vendor": "Stracke, Ortiz and Stiedemann",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-10-14T18:02:22.854Z",
+      "amount": 883.91,
+      "vendor": "Metz, Doyle and Mitchell",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-10-05T18:48:15.140Z",
+      "amount": 322.7,
+      "vendor": "Goodwin - Smith",
+      "category": "Health"
+    },
+    {
+      "date": "2021-07-26T17:25:34.891Z",
+      "amount": 974.96,
+      "vendor": "Schoen, Lebsack and Bergnaum",
+      "category": "Tools"
+    },
+    {
+      "date": "2023-01-02T08:13:22.997Z",
+      "amount": 107.41,
+      "vendor": "Reynolds, Jones and Klocko",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-01-24T07:48:16.620Z",
+      "amount": 202.4,
+      "vendor": "Mann, King and Sanford",
+      "category": "Automotive"
+    },
+    {
+      "date": "2023-01-18T12:41:09.254Z",
+      "amount": 720.76,
+      "vendor": "Weissnat Inc",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-04-02T02:25:03.462Z",
+      "amount": 987.24,
+      "vendor": "West - Gislason",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-03-23T06:18:13.021Z",
+      "amount": 468.8,
+      "vendor": "Quitzon - Parker",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-04-02T09:27:46.022Z",
+      "amount": 779.36,
+      "vendor": "Daniel and Sons",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-01-15T10:21:14.185Z",
+      "amount": 716.73,
+      "vendor": "Hilpert Group",
+      "category": "Music"
+    },
+    {
+      "date": "2022-10-18T23:54:13.908Z",
+      "amount": 950.31,
+      "vendor": "Cummings, Dietrich and Schroeder",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-01-25T23:45:22.054Z",
+      "amount": 465.28,
+      "vendor": "Metz - Robel",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-12-15T17:20:50.860Z",
+      "amount": 166.53,
+      "vendor": "Schowalter - Lakin",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-08-22T06:43:13.349Z",
+      "amount": 756.62,
+      "vendor": "Wilkinson - Franey",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-08-11T01:30:56.193Z",
+      "amount": 278,
+      "vendor": "Deckow Inc",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-01-18T19:28:15.125Z",
+      "amount": 124.34,
+      "vendor": "Kemmer - Kreiger",
+      "category": "Music"
+    },
+    {
+      "date": "2022-07-04T13:12:53.419Z",
+      "amount": 769.53,
+      "vendor": "VonRueden, Bruen and Bayer",
+      "category": "Health"
+    },
+    {
+      "date": "2021-05-23T17:34:52.643Z",
+      "amount": 973.14,
+      "vendor": "McCullough Group",
+      "category": "Games"
+    },
+    {
+      "date": "2021-05-10T19:18:46.566Z",
+      "amount": 171.88,
+      "vendor": "Jakubowski Group",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-04-18T09:31:38.351Z",
+      "amount": 162.21,
+      "vendor": "Maggio Inc",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-01-13T10:34:38.264Z",
+      "amount": 176.07,
+      "vendor": "Schulist, Grimes and Howell",
+      "category": "Computers"
+    },
+    {
+      "date": "2021-06-17T04:23:38.064Z",
+      "amount": 199.78,
+      "vendor": "Marvin and Sons",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-01-08T03:23:48.166Z",
+      "amount": 297.22,
+      "vendor": "King - McClure",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-11-09T05:23:22.331Z",
+      "amount": 941.04,
+      "vendor": "Ruecker, Rogahn and Gleason",
+      "category": "Games"
+    },
+    {
+      "date": "2021-02-02T22:04:30.893Z",
+      "amount": 461.9,
+      "vendor": "Wilderman and Sons",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-10-20T01:06:42.374Z",
+      "amount": 709.6,
+      "vendor": "Veum - Pfeffer",
+      "category": "Games"
+    },
+    {
+      "date": "2021-02-20T21:24:34.064Z",
+      "amount": 236.69,
+      "vendor": "Jenkins, Hermann and Labadie",
+      "category": "Health"
+    },
+    {
+      "date": "2021-06-08T14:51:52.584Z",
+      "amount": 243.6,
+      "vendor": "Rodriguez LLC",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-10-16T09:34:41.718Z",
+      "amount": 178.53,
+      "vendor": "Johnston - Christiansen",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-10-09T12:29:36.839Z",
+      "amount": 429.91,
+      "vendor": "Hegmann LLC",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-08-24T08:32:25.713Z",
+      "amount": 18.25,
+      "vendor": "Murray and Sons",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-04-02T17:09:23.673Z",
+      "amount": 89.22,
+      "vendor": "Bruen, Sporer and Frami",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-03-04T08:40:49.118Z",
+      "amount": 774.51,
+      "vendor": "Hoeger, Emard and Krajcik",
+      "category": "Health"
+    },
+    {
+      "date": "2021-02-05T08:24:44.268Z",
+      "amount": 458.38,
+      "vendor": "Fisher Group",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-08-02T13:11:14.821Z",
+      "amount": 709.94,
+      "vendor": "Blanda Inc",
+      "category": "Games"
+    },
+    {
+      "date": "2021-10-08T14:36:22.667Z",
+      "amount": 47.79,
+      "vendor": "Bailey - Towne",
+      "category": "Music"
+    },
+    {
+      "date": "2021-06-15T04:50:50.335Z",
+      "amount": 198.6,
+      "vendor": "Rodriguez Group",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-05-26T05:15:03.965Z",
+      "amount": 636.51,
+      "vendor": "Rogahn, Schuster and Kunze",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-03-04T09:17:57.828Z",
+      "amount": 43.82,
+      "vendor": "Collier LLC",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-09-23T02:21:44.511Z",
+      "amount": 182.95,
+      "vendor": "Gislason Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-10-26T22:14:55.753Z",
+      "amount": 321.74,
+      "vendor": "Zieme, Predovic and Mueller",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-08-22T11:02:38.880Z",
+      "amount": 853.64,
+      "vendor": "Leuschke - Dickens",
+      "category": "Music"
+    },
+    {
+      "date": "2022-11-07T10:04:19.606Z",
+      "amount": 509.53,
+      "vendor": "Lynch - Koch",
+      "category": "Games"
+    },
+    {
+      "date": "2021-10-28T22:33:26.313Z",
+      "amount": 496.2,
+      "vendor": "Nikolaus - Tremblay",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-02-01T04:50:15.892Z",
+      "amount": 100.12,
+      "vendor": "Harris, Douglas and Bergnaum",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-03-28T06:03:18.584Z",
+      "amount": 922.25,
+      "vendor": "Homenick Group",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-01-11T06:53:54.785Z",
+      "amount": 151.19,
+      "vendor": "Konopelski and Sons",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-04-13T03:36:45.002Z",
+      "amount": 913.12,
+      "vendor": "Frami - Barton",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-03-11T14:47:37.542Z",
+      "amount": 124.85,
+      "vendor": "Robel, McCullough and Zulauf",
+      "category": "Music"
+    },
+    {
+      "date": "2021-09-27T14:34:27.805Z",
+      "amount": 777.6,
+      "vendor": "Cronin - Hermiston",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-12-15T02:00:51.569Z",
+      "amount": 414.12,
+      "vendor": "Armstrong Group",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-03-28T16:44:34.899Z",
+      "amount": 605.97,
+      "vendor": "Glover, Pouros and Daugherty",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-11-21T20:12:29.420Z",
+      "amount": 43.99,
+      "vendor": "O'Keefe, Rath and Ziemann",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-06-12T16:13:52.991Z",
+      "amount": 330.15,
+      "vendor": "Glover LLC",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-11-08T03:06:07.674Z",
+      "amount": 317.21,
+      "vendor": "Nikolaus - Tromp",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-12-29T15:50:03.875Z",
+      "amount": 529.78,
+      "vendor": "Gulgowski Inc",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-06-20T02:28:47.450Z",
+      "amount": 817.67,
+      "vendor": "Hintz, Schmeler and Hilll",
+      "category": "Books"
+    },
+    {
+      "date": "2022-04-23T13:52:14.466Z",
+      "amount": 823.55,
+      "vendor": "Schiller LLC",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-02-24T23:21:12.909Z",
+      "amount": 884.99,
+      "vendor": "Christiansen - Grant",
+      "category": "Home"
+    },
+    {
+      "date": "2022-07-04T05:11:43.299Z",
+      "amount": 845.81,
+      "vendor": "Kemmer Inc",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-11-27T01:25:18.873Z",
+      "amount": 417.44,
+      "vendor": "Becker - Dare",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-01-04T13:55:49.649Z",
+      "amount": 379.64,
+      "vendor": "Brakus, Tillman and Osinski",
+      "category": "Health"
+    },
+    {
+      "date": "2022-05-12T18:23:39.401Z",
+      "amount": 757.22,
+      "vendor": "Bashirian and Sons",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-10-25T06:57:41.492Z",
+      "amount": 286.54,
+      "vendor": "Franecki - Smitham",
+      "category": "Home"
+    },
+    {
+      "date": "2021-01-27T07:15:32.588Z",
+      "amount": 343.19,
+      "vendor": "Bauch Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-04-29T04:00:56.811Z",
+      "amount": 301.78,
+      "vendor": "Dooley - Robel",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-04-19T20:25:15.495Z",
+      "amount": 700.73,
+      "vendor": "Huel Group",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-01-25T01:59:20.728Z",
+      "amount": 762.72,
+      "vendor": "Heller - Mayert",
+      "category": "Home"
+    },
+    {
+      "date": "2022-12-23T22:50:24.385Z",
+      "amount": 129.01,
+      "vendor": "Hammes Group",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-01-06T20:55:52.694Z",
+      "amount": 705.89,
+      "vendor": "Kutch and Sons",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-02-07T23:52:21.628Z",
+      "amount": 884.5,
+      "vendor": "Hettinger LLC",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-06-29T09:54:52.465Z",
+      "amount": 368.65,
+      "vendor": "Okuneva and Sons",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-03-18T00:07:37.659Z",
+      "amount": 846.73,
+      "vendor": "Rice - Lesch",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-02-10T03:58:12.516Z",
+      "amount": 597.11,
+      "vendor": "Raynor Group",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-12-02T04:28:14.840Z",
+      "amount": 7.5,
+      "vendor": "Huels, Rohan and Fay",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-06-23T05:33:04.419Z",
+      "amount": 59.97,
+      "vendor": "Ondricka - Kuhn",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-06-20T04:44:33.890Z",
+      "amount": 699.31,
+      "vendor": "Breitenberg Inc",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-08-07T01:31:04.562Z",
+      "amount": 961.63,
+      "vendor": "Lindgren - Haag",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-10-23T20:39:42.594Z",
+      "amount": 424.11,
+      "vendor": "Greenfelder Inc",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-12-18T10:50:10.101Z",
+      "amount": 326.61,
+      "vendor": "Kihn, O'Connell and Boyer",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-08-05T00:00:18.810Z",
+      "amount": 783.3,
+      "vendor": "Bruen Group",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-07-30T22:48:51.862Z",
+      "amount": 162.28,
+      "vendor": "Goyette Group",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-07-17T03:49:26.071Z",
+      "amount": 924.36,
+      "vendor": "Bernhard and Sons",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-09-28T17:01:36.943Z",
+      "amount": 856.21,
+      "vendor": "Kohler, Harris and Weber",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-12-02T11:20:55.268Z",
+      "amount": 745.92,
+      "vendor": "Runolfsson, Nikolaus and Schmitt",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-04-20T15:10:33.896Z",
+      "amount": 649.09,
+      "vendor": "Bednar - Johns",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-03-13T22:11:35.879Z",
+      "amount": 387.78,
+      "vendor": "Koss and Sons",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-07-10T15:07:41.516Z",
+      "amount": 327.91,
+      "vendor": "McLaughlin, Hammes and Schumm",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-12-09T21:34:22.333Z",
+      "amount": 62.23,
+      "vendor": "Daugherty and Sons",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-06-23T00:31:36.745Z",
+      "amount": 123.55,
+      "vendor": "Donnelly, Hermann and Kulas",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-04-11T04:18:31.111Z",
+      "amount": 159.96,
+      "vendor": "Marvin, Mann and Lakin",
+      "category": "Games"
+    },
+    {
+      "date": "2021-11-03T20:48:52.614Z",
+      "amount": 984.37,
+      "vendor": "Pfeffer - McClure",
+      "category": "Computers"
+    },
+    {
+      "date": "2023-01-06T17:22:08.104Z",
+      "amount": 713.69,
+      "vendor": "Wiza - Bauch",
+      "category": "Home"
+    },
+    {
+      "date": "2022-12-06T02:21:34.448Z",
+      "amount": 192.42,
+      "vendor": "Gleason, Hamill and Fisher",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-11-18T01:33:06.203Z",
+      "amount": 552.14,
+      "vendor": "Barrows, Hoeger and Zieme",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-03-03T17:03:31.455Z",
+      "amount": 102.72,
+      "vendor": "Hirthe - Moore",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-06-10T14:31:48.642Z",
+      "amount": 264.59,
+      "vendor": "Hartmann Group",
+      "category": "Games"
+    },
+    {
+      "date": "2022-07-10T16:59:37.634Z",
+      "amount": 115.58,
+      "vendor": "Kilback - Beier",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-02-07T03:58:18.668Z",
+      "amount": 226.28,
+      "vendor": "Barrows Group",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-07-01T00:19:54.008Z",
+      "amount": 100.8,
+      "vendor": "Mertz LLC",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-12-11T14:46:02.470Z",
+      "amount": 189.1,
+      "vendor": "Beier Inc",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-06-02T06:51:52.541Z",
+      "amount": 279.69,
+      "vendor": "Ziemann, Murphy and Fritsch",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-09-02T14:10:09.602Z",
+      "amount": 333.76,
+      "vendor": "Stracke, Rempel and Thiel",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-03-07T11:25:03.248Z",
+      "amount": 448.12,
+      "vendor": "Ziemann, Cummings and Conroy",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-08-11T12:22:51.385Z",
+      "amount": 902.17,
+      "vendor": "Yundt, Beier and Hartmann",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-12-24T08:16:04.744Z",
+      "amount": 763.81,
+      "vendor": "Casper - Grimes",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-08-25T09:07:07.068Z",
+      "amount": 339.4,
+      "vendor": "Dach Inc",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-02-11T14:36:39.175Z",
+      "amount": 140.01,
+      "vendor": "Kautzer LLC",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-01-15T11:28:57.238Z",
+      "amount": 558.95,
+      "vendor": "O'Conner - Lowe",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-11-28T08:45:02.341Z",
+      "amount": 437.54,
+      "vendor": "Balistreri, Kovacek and Rodriguez",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-03-07T03:48:43.880Z",
+      "amount": 803.39,
+      "vendor": "Pfannerstill - Nikolaus",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-04-11T02:07:38.510Z",
+      "amount": 186.26,
+      "vendor": "Haag, Jacobi and Mueller",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-03-08T13:47:03.864Z",
+      "amount": 260.49,
+      "vendor": "Willms, Kutch and Treutel",
+      "category": "Garden"
+    },
+    {
+      "date": "2023-01-12T07:44:38.693Z",
+      "amount": 482.63,
+      "vendor": "Dietrich Inc",
+      "category": "Music"
+    },
+    {
+      "date": "2021-08-09T19:27:45.943Z",
+      "amount": 774.86,
+      "vendor": "Herzog - Marquardt",
+      "category": "Toys"
+    },
+    {
+      "date": "2022-07-19T22:07:21.142Z",
+      "amount": 43.85,
+      "vendor": "Rolfson, Lubowitz and Mante",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-02-20T15:17:50.941Z",
+      "amount": 592.41,
+      "vendor": "Rau, Hettinger and Strosin",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-02-27T12:40:20.737Z",
+      "amount": 761.23,
+      "vendor": "Terry, Zieme and Moen",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-08-24T06:17:00.330Z",
+      "amount": 646.62,
+      "vendor": "Anderson - Cartwright",
+      "category": "Garden"
+    },
+    {
+      "date": "2022-02-22T08:48:01.788Z",
+      "amount": 144.65,
+      "vendor": "Hahn, Gutmann and Emmerich",
+      "category": "Books"
+    },
+    {
+      "date": "2022-03-14T06:19:46.065Z",
+      "amount": 821.3,
+      "vendor": "Kihn and Sons",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-02-08T23:57:38.755Z",
+      "amount": 4.09,
+      "vendor": "Medhurst LLC",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-07-02T15:33:36.711Z",
+      "amount": 648.96,
+      "vendor": "Bosco and Sons",
+      "category": "Music"
+    },
+    {
+      "date": "2022-05-31T02:40:09.704Z",
+      "amount": 977.68,
+      "vendor": "Sipes Inc",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-06-24T06:57:24.389Z",
+      "amount": 130.81,
+      "vendor": "Howell - Stroman",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-04-12T12:41:22.025Z",
+      "amount": 141.89,
+      "vendor": "Towne and Sons",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-08-02T09:51:43.695Z",
+      "amount": 547.38,
+      "vendor": "Abshire, Batz and Ryan",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-06-12T16:11:15.483Z",
+      "amount": 671.66,
+      "vendor": "Beahan Group",
+      "category": "Music"
+    },
+    {
+      "date": "2023-01-14T07:31:37.007Z",
+      "amount": 954.7,
+      "vendor": "Hansen, Hand and Weber",
+      "category": "Music"
+    },
+    {
+      "date": "2022-02-25T09:11:31.651Z",
+      "amount": 282.3,
+      "vendor": "Welch - Altenwerth",
+      "category": "Books"
+    },
+    {
+      "date": "2022-01-28T12:25:00.520Z",
+      "amount": 598.4,
+      "vendor": "Anderson, Gerlach and Raynor",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-09-24T21:42:46.341Z",
+      "amount": 166.36,
+      "vendor": "Hackett, Stoltenberg and Goldner",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-01-02T18:42:18.006Z",
+      "amount": 965.08,
+      "vendor": "Wilkinson, Weissnat and Strosin",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-08-30T06:01:41.849Z",
+      "amount": 602.46,
+      "vendor": "Cruickshank Group",
+      "category": "Music"
+    },
+    {
+      "date": "2022-05-30T04:49:28.511Z",
+      "amount": 691.34,
+      "vendor": "Huels - Oberbrunner",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-08-05T01:38:55.773Z",
+      "amount": 325.87,
+      "vendor": "Dickinson - Kerluke",
+      "category": "Sports"
+    },
+    {
+      "date": "2021-10-21T19:46:52.676Z",
+      "amount": 428.21,
+      "vendor": "Hackett Inc",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-09-13T21:19:25.921Z",
+      "amount": 441.5,
+      "vendor": "Wilderman - Goldner",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-08-15T13:01:50.668Z",
+      "amount": 187.84,
+      "vendor": "Hegmann - Fisher",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-06-27T06:44:29.599Z",
+      "amount": 75.65,
+      "vendor": "Thiel and Sons",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-08-14T08:42:23.402Z",
+      "amount": 950.96,
+      "vendor": "Hane and Sons",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-08-28T16:40:27.968Z",
+      "amount": 268.27,
+      "vendor": "Denesik LLC",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-06-23T12:18:18.875Z",
+      "amount": 323.78,
+      "vendor": "Davis - Kutch",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-11-08T12:55:54.191Z",
+      "amount": 497.97,
+      "vendor": "Koss, Kreiger and Nicolas",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-01-09T10:22:07.086Z",
+      "amount": 835.4,
+      "vendor": "Brown, Emard and Cummerata",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-11-24T01:41:45.410Z",
+      "amount": 954.69,
+      "vendor": "Daniel Inc",
+      "category": "Music"
+    },
+    {
+      "date": "2021-03-30T01:48:09.893Z",
+      "amount": 28.28,
+      "vendor": "Lueilwitz - Cummings",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-06-06T07:45:03.917Z",
+      "amount": 703.2,
+      "vendor": "Wuckert - Lueilwitz",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-05-30T16:00:48.010Z",
+      "amount": 583.25,
+      "vendor": "Bode LLC",
+      "category": "Home"
+    },
+    {
+      "date": "2021-03-06T01:00:55.968Z",
+      "amount": 329.61,
+      "vendor": "Hyatt, Cole and Rolfson",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-05-18T01:19:21.487Z",
+      "amount": 375.36,
+      "vendor": "Hettinger, O'Conner and Pfannerstill",
+      "category": "Home"
+    },
+    {
+      "date": "2022-12-25T14:29:42.350Z",
+      "amount": 861.74,
+      "vendor": "Botsford, Hyatt and Roberts",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-11-06T16:43:56.084Z",
+      "amount": 172.1,
+      "vendor": "Huel - Wuckert",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-12-01T17:19:20.231Z",
+      "amount": 375.38,
+      "vendor": "McGlynn, Padberg and Wiegand",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-06-20T09:40:14.315Z",
+      "amount": 667.81,
+      "vendor": "Bailey, Crona and Murazik",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-10-30T07:36:35.722Z",
+      "amount": 263.1,
+      "vendor": "Osinski, Kshlerin and Auer",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-04-06T01:35:52.522Z",
+      "amount": 30.58,
+      "vendor": "Blick Group",
+      "category": "Shoes"
+    },
+    {
+      "date": "2021-02-11T09:04:01.401Z",
+      "amount": 94.6,
+      "vendor": "Kunde Inc",
+      "category": "Games"
+    },
+    {
+      "date": "2021-04-05T05:34:40.662Z",
+      "amount": 824.78,
+      "vendor": "Jacobson - Schuppe",
+      "category": "Grocery"
+    },
+    {
+      "date": "2021-01-25T11:25:42.905Z",
+      "amount": 289.65,
+      "vendor": "Windler Group",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-11-24T04:56:38.588Z",
+      "amount": 423.43,
+      "vendor": "Franecki Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-11-25T21:39:34.700Z",
+      "amount": 450.77,
+      "vendor": "Kling and Sons",
+      "category": "Tools"
+    },
+    {
+      "date": "2021-03-08T08:36:41.594Z",
+      "amount": 224.55,
+      "vendor": "Abbott - Gorczany",
+      "category": "Music"
+    },
+    {
+      "date": "2021-05-31T11:54:41.721Z",
+      "amount": 302.42,
+      "vendor": "Aufderhar Inc",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-11-20T15:02:51.898Z",
+      "amount": 340.28,
+      "vendor": "Schumm Group",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-05-23T23:39:16.837Z",
+      "amount": 172.5,
+      "vendor": "Kuhic, Schiller and Bauch",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-03-27T06:35:17.434Z",
+      "amount": 189.3,
+      "vendor": "Donnelly, Bradtke and Cremin",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-01-31T07:49:12.558Z",
+      "amount": 273.4,
+      "vendor": "Walter - D'Amore",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-10-09T03:22:52.443Z",
+      "amount": 973.51,
+      "vendor": "Haley - Lang",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-11-02T17:52:15.590Z",
+      "amount": 35.25,
+      "vendor": "Nitzsche - Gleason",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-02-07T13:02:00.357Z",
+      "amount": 136.13,
+      "vendor": "Runolfsson, Kunze and Walker",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-08-29T21:28:33.249Z",
+      "amount": 596.02,
+      "vendor": "Christiansen LLC",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-06-16T01:05:33.016Z",
+      "amount": 737.27,
+      "vendor": "McDermott and Sons",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-05-13T04:04:17.224Z",
+      "amount": 8.19,
+      "vendor": "Rowe Group",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-01-19T18:53:08.439Z",
+      "amount": 798.91,
+      "vendor": "Hartmann - Kilback",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-03-12T20:45:08.365Z",
+      "amount": 53.47,
+      "vendor": "Vandervort, Fadel and Sawayn",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-02-26T01:28:08.154Z",
+      "amount": 471.63,
+      "vendor": "Mertz, Legros and Jacobi",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-12-13T22:32:54.427Z",
+      "amount": 725.73,
+      "vendor": "Williamson - Kilback",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-12-16T01:10:52.152Z",
+      "amount": 557.87,
+      "vendor": "Kling Inc",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-12-30T11:51:08.124Z",
+      "amount": 396.89,
+      "vendor": "Kreiger Group",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-06-30T11:03:52.449Z",
+      "amount": 202.37,
+      "vendor": "Gerhold LLC",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-10-12T06:43:18.062Z",
+      "amount": 576.26,
+      "vendor": "Pacocha - O'Reilly",
+      "category": "Music"
+    },
+    {
+      "date": "2021-11-10T08:40:22.640Z",
+      "amount": 584.67,
+      "vendor": "Bechtelar - Bruen",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-06-20T12:57:27.058Z",
+      "amount": 152.43,
+      "vendor": "Walker, Zemlak and Torphy",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-09-17T16:43:07.056Z",
+      "amount": 95.14,
+      "vendor": "Friesen LLC",
+      "category": "Tools"
+    },
+    {
+      "date": "2023-01-01T18:12:31.813Z",
+      "amount": 495.62,
+      "vendor": "Kuhic - Konopelski",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-02-22T05:12:04.139Z",
+      "amount": 874.7,
+      "vendor": "Walter, Lakin and Davis",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-06-26T15:11:03.749Z",
+      "amount": 83.04,
+      "vendor": "Walker - Moen",
+      "category": "Health"
+    },
+    {
+      "date": "2022-04-30T00:46:13.279Z",
+      "amount": 9.7,
+      "vendor": "Robel - Koepp",
+      "category": "Music"
+    },
+    {
+      "date": "2021-10-25T21:55:09.532Z",
+      "amount": 842.66,
+      "vendor": "Macejkovic Inc",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-02-16T11:56:50.423Z",
+      "amount": 95.49,
+      "vendor": "Luettgen, Thompson and Nolan",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-06-03T04:53:28.537Z",
+      "amount": 517.85,
+      "vendor": "Kuvalis, Sauer and Toy",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-11-08T06:53:36.417Z",
+      "amount": 838.53,
+      "vendor": "Haag, Schuster and Jacobi",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-01-26T12:40:23.764Z",
+      "amount": 198.1,
+      "vendor": "Bashirian - Boyer",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-11-01T20:26:57.044Z",
+      "amount": 672.09,
+      "vendor": "Satterfield - Braun",
+      "category": "Music"
+    },
+    {
+      "date": "2022-07-07T02:29:27.119Z",
+      "amount": 635.46,
+      "vendor": "Sipes Group",
+      "category": "Home"
+    },
+    {
+      "date": "2021-12-22T03:36:54.626Z",
+      "amount": 378.61,
+      "vendor": "Beatty, Jakubowski and Cremin",
+      "category": "Music"
+    },
+    {
+      "date": "2021-03-23T04:56:10.742Z",
+      "amount": 675.33,
+      "vendor": "Connelly - Bogan",
+      "category": "Computers"
+    },
+    {
+      "date": "2022-04-08T10:57:17.080Z",
+      "amount": 684.31,
+      "vendor": "Smitham, Kemmer and Doyle",
+      "category": "Music"
+    },
+    {
+      "date": "2022-05-31T21:58:15.183Z",
+      "amount": 938.96,
+      "vendor": "Heathcote - Fahey",
+      "category": "Health"
+    },
+    {
+      "date": "2022-04-10T11:34:01.535Z",
+      "amount": 291.74,
+      "vendor": "Gutmann - Frami",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-11-21T00:03:56.360Z",
+      "amount": 765.78,
+      "vendor": "Mante, Trantow and Funk",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-02-18T21:21:46.105Z",
+      "amount": 508.33,
+      "vendor": "Feest - Mann",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-02-11T20:27:56.903Z",
+      "amount": 618.92,
+      "vendor": "Leffler LLC",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-03-22T14:25:50.407Z",
+      "amount": 220.97,
+      "vendor": "Barton, Ondricka and Schroeder",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-11-27T06:13:48.506Z",
+      "amount": 561.61,
+      "vendor": "Waters - Altenwerth",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-07-10T07:40:34.839Z",
+      "amount": 277.73,
+      "vendor": "Reichel, Koelpin and Kiehn",
+      "category": "Games"
+    },
+    {
+      "date": "2021-03-19T13:37:37.841Z",
+      "amount": 61.89,
+      "vendor": "Jerde Inc",
+      "category": "Automotive"
+    },
+    {
+      "date": "2022-05-12T01:13:09.216Z",
+      "amount": 916.49,
+      "vendor": "Langworth - Beahan",
+      "category": "Home"
+    },
+    {
+      "date": "2022-04-21T22:23:49.403Z",
+      "amount": 42.53,
+      "vendor": "Borer Inc",
+      "category": "Music"
+    },
+    {
+      "date": "2022-03-25T04:36:19.176Z",
+      "amount": 723.06,
+      "vendor": "Hermann LLC",
+      "category": "Health"
+    },
+    {
+      "date": "2022-11-18T10:07:15.548Z",
+      "amount": 652.98,
+      "vendor": "Skiles - Greenholt",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-11-09T10:43:27.764Z",
+      "amount": 598.03,
+      "vendor": "Klocko, Batz and Buckridge",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-01-07T08:18:04.042Z",
+      "amount": 86.74,
+      "vendor": "Kirlin - Lemke",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-04-11T12:44:11.165Z",
+      "amount": 904.83,
+      "vendor": "Hansen - Moore",
+      "category": "Home"
+    },
+    {
+      "date": "2021-08-29T13:49:58.637Z",
+      "amount": 357.83,
+      "vendor": "Nolan - Strosin",
+      "category": "Computers"
+    },
+    {
+      "date": "2021-07-31T21:51:40.366Z",
+      "amount": 736.43,
+      "vendor": "Bauch LLC",
+      "category": "Grocery"
+    },
+    {
+      "date": "2022-08-21T20:18:33.035Z",
+      "amount": 550.61,
+      "vendor": "Schoen, Jacobs and Schroeder",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-10-20T06:44:56.278Z",
+      "amount": 377.94,
+      "vendor": "Dickens - Pacocha",
+      "category": "Baby"
+    },
+    {
+      "date": "2022-02-13T13:23:27.952Z",
+      "amount": 905.18,
+      "vendor": "Hand Inc",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-10-13T09:52:29.568Z",
+      "amount": 644.98,
+      "vendor": "Lindgren, Collins and Grimes",
+      "category": "Shoes"
+    },
+    {
+      "date": "2022-07-05T05:05:03.134Z",
+      "amount": 804.53,
+      "vendor": "Fadel - Kozey",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-04-18T20:27:56.326Z",
+      "amount": 331.36,
+      "vendor": "Quitzon - Robel",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-10-18T09:45:17.833Z",
+      "amount": 502.33,
+      "vendor": "Jones Inc",
+      "category": "Toys"
+    },
+    {
+      "date": "2021-10-26T22:23:11.761Z",
+      "amount": 521.64,
+      "vendor": "Rempel - Hilll",
+      "category": "Health"
+    },
+    {
+      "date": "2021-06-11T04:47:27.862Z",
+      "amount": 898.4,
+      "vendor": "Boyer, Johnston and McLaughlin",
+      "category": "Movies"
+    },
+    {
+      "date": "2021-04-05T21:56:43.506Z",
+      "amount": 213.58,
+      "vendor": "Beier - Marquardt",
+      "category": "Toys"
+    },
+    {
+      "date": "2023-01-06T05:19:43.614Z",
+      "amount": 407.53,
+      "vendor": "Jerde, Hahn and Veum",
+      "category": "Books"
+    },
+    {
+      "date": "2021-11-12T10:41:19.540Z",
+      "amount": 679.43,
+      "vendor": "Thompson LLC",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-03-10T02:03:19.560Z",
+      "amount": 806.49,
+      "vendor": "Lowe, Nikolaus and Schneider",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-07-06T18:31:34.784Z",
+      "amount": 843.01,
+      "vendor": "Kihn, Fadel and Deckow",
+      "category": "Tools"
+    },
+    {
+      "date": "2022-09-26T17:43:00.044Z",
+      "amount": 871.71,
+      "vendor": "Bogisich LLC",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-06-15T07:07:35.199Z",
+      "amount": 691.23,
+      "vendor": "Walter and Sons",
+      "category": "Music"
+    },
+    {
+      "date": "2021-08-09T03:59:20.854Z",
+      "amount": 128.69,
+      "vendor": "Mohr - Ondricka",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-06-17T02:34:13.126Z",
+      "amount": 761.49,
+      "vendor": "Bashirian LLC",
+      "category": "Industrial"
+    },
+    {
+      "date": "2021-06-08T09:08:47.938Z",
+      "amount": 753.17,
+      "vendor": "Fay Inc",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2022-04-08T07:04:52.199Z",
+      "amount": 637.53,
+      "vendor": "Kshlerin - Baumbach",
+      "category": "Sports"
+    },
+    {
+      "date": "2022-12-18T23:41:41.196Z",
+      "amount": 959,
+      "vendor": "Beatty - Reynolds",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-11-26T19:17:37.507Z",
+      "amount": 201.38,
+      "vendor": "Kuphal, Borer and Brakus",
+      "category": "Beauty"
+    },
+    {
+      "date": "2022-10-13T06:42:42.230Z",
+      "amount": 9.67,
+      "vendor": "Turner, Lebsack and Heidenreich",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-01-26T10:40:57.773Z",
+      "amount": 582.34,
+      "vendor": "Simonis, Dach and Roob",
+      "category": "Books"
+    },
+    {
+      "date": "2022-10-27T07:47:56.183Z",
+      "amount": 842.32,
+      "vendor": "Schinner - Bruen",
+      "category": "Beauty"
+    },
+    {
+      "date": "2021-04-21T09:17:30.902Z",
+      "amount": 870.96,
+      "vendor": "Ward Inc",
+      "category": "Clothing"
+    },
+    {
+      "date": "2022-03-26T08:56:28.504Z",
+      "amount": 784.65,
+      "vendor": "Turcotte Inc",
+      "category": "Home"
+    },
+    {
+      "date": "2021-11-27T08:26:02.727Z",
+      "amount": 523.35,
+      "vendor": "Abbott Group",
+      "category": "Automotive"
+    },
+    {
+      "date": "2021-12-27T01:35:56.862Z",
+      "amount": 180.84,
+      "vendor": "Lebsack, Upton and Mueller",
+      "category": "Games"
+    },
+    {
+      "date": "2022-05-05T03:51:12.615Z",
+      "amount": 337.93,
+      "vendor": "Will, Grimes and Kub",
+      "category": "Garden"
+    },
+    {
+      "date": "2021-05-20T15:27:49.410Z",
+      "amount": 395.95,
+      "vendor": "Nikolaus Inc",
+      "category": "Movies"
+    },
+    {
+      "date": "2022-07-17T10:59:10.083Z",
+      "amount": 535,
+      "vendor": "Krajcik Inc",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-06-30T22:05:23.495Z",
+      "amount": 897.7,
+      "vendor": "Harber, Ratke and Schneider",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2021-06-08T04:08:38.599Z",
+      "amount": 19.76,
+      "vendor": "Haley, Lueilwitz and Kessler",
+      "category": "Industrial"
+    },
+    {
+      "date": "2022-01-10T12:10:50.073Z",
+      "amount": 850.92,
+      "vendor": "Keeling, Abbott and Spinka",
+      "category": "Kids"
+    },
+    {
+      "date": "2022-01-25T05:53:02.340Z",
+      "amount": 951.87,
+      "vendor": "Goldner LLC",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-05-02T10:15:36.529Z",
+      "amount": 656.23,
+      "vendor": "Hyatt - Carroll",
+      "category": "Outdoors"
+    },
+    {
+      "date": "2023-01-08T17:29:20.324Z",
+      "amount": 823.66,
+      "vendor": "Bahringer - Casper",
+      "category": "Health"
+    },
+    {
+      "date": "2021-08-06T07:01:11.026Z",
+      "amount": 98.28,
+      "vendor": "Morar, Kihn and Stroman",
+      "category": "Baby"
+    },
+    {
+      "date": "2021-05-11T10:55:13.722Z",
+      "amount": 333.85,
+      "vendor": "Bahringer - Hackett",
+      "category": "Games"
+    },
+    {
+      "date": "2021-09-29T11:08:04.145Z",
+      "amount": 881.86,
+      "vendor": "Jast - Parisian",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2022-08-21T19:53:09.984Z",
+      "amount": 401.53,
+      "vendor": "Greenholt - Hilll",
+      "category": "Electronics"
+    },
+    {
+      "date": "2021-03-14T04:54:00.176Z",
+      "amount": 663.76,
+      "vendor": "McCullough - Lang",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-02-07T06:50:37.696Z",
+      "amount": 286.41,
+      "vendor": "Feest - Reynolds",
+      "category": "Games"
+    },
+    {
+      "date": "2022-07-20T03:50:41.832Z",
+      "amount": 291.24,
+      "vendor": "Lubowitz and Sons",
+      "category": "Electronics"
+    },
+    {
+      "date": "2022-06-01T14:11:36.213Z",
+      "amount": 120.74,
+      "vendor": "Emmerich and Sons",
+      "category": "Kids"
+    },
+    {
+      "date": "2021-08-31T13:37:32.620Z",
+      "amount": 911.37,
+      "vendor": "Jenkins - Moen",
+      "category": "Clothing"
+    },
+    {
+      "date": "2021-09-14T01:54:30.591Z",
+      "amount": 937.39,
+      "vendor": "Dooley, Legros and Ledner",
+      "category": "Games"
+    },
+    {
+      "date": "2021-04-11T06:52:19.913Z",
+      "amount": 300.95,
+      "vendor": "Crona Inc",
+      "category": "Games"
+    },
+    {
+      "date": "2022-07-22T08:00:57.332Z",
+      "amount": 838.28,
+      "vendor": "McKenzie - Dooley",
+      "category": "Baby"
+    },
+    {
+      "date": "2023-01-20T17:50:51.276Z",
+      "amount": 405.57,
+      "vendor": "Ledner, Lemke and White",
+      "category": "Jewelery"
+    },
+    {
+      "date": "2021-03-26T10:50:23.908Z",
+      "amount": 115.76,
+      "vendor": "Stehr Inc",
+      "category": "Toys"
+    },
+    {
+      "date": "2023-01-22",
+      "amount": 12.01,
+      "vendor": "Maggio Group",
+      "category": "Shoes"
+    },
+    {
+      "date": "2023-01-24T04:57:56.955Z",
+      "amount": 67,
+      "vendor": "Thompson - Roberts",
+      "category": "Electronics"
+    },
+    {
+      "date": "2023-01-26",
+      "amount": 67.27,
+      "vendor": "McGlynn - Dare",
+      "category": "Movies"
+    },
+    {
+      "date": "2023-01-23T11:21:30.634Z",
+      "amount": 440.36,
+      "vendor": "Zieme and Sons",
+      "category": "Garden"
+    },
+    {
+      "date": "2023-01-19T03:12:26.621Z",
+      "amount": 503.05,
+      "vendor": "Bartoletti, Little and Kulas",
+      "category": "Games"
     }
   ]
 }
