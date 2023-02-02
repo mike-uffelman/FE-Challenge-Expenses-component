@@ -4,9 +4,10 @@ import {useState, useEffect} from 'react';
 function SpendingSummary({data}) {
     
     const total = new Intl.NumberFormat(navigator.languages[0], { style: 'currency', currency: 'USD'}).format(    
-        data.transactions
-            .map((amt, i) => amt.amount)
-            .reduce((prev, cur) => prev + cur, 0)
+        Object.values(data)
+            .map(day => 
+                day.reduce((acc, curr) => acc + curr.amount, 0))
+            .reduce((acc, curr) => acc + curr, 0)
     )
 
     const renderTimeframeTotal = <div>{total}</div>

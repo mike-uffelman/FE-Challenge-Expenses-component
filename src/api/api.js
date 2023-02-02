@@ -14,8 +14,9 @@ export const fetchAccount = async() => {
 
 //     for (let i = 0; i < 600; i++) {
 //         let obj = {};
-//         obj['date'] = faker.date.between('2021-01-01T00:00:00.000Z', '2023-01-22T00:00:00.000Z');
-//         obj['amount'] = Number(faker.finance.amount(0, 1000, 2));
+//         obj['id'] = faker.datatype.uuid()
+//         obj['date'] = faker.date.between('2022-01-01', '2023-01-28');
+//         obj['amount'] = Number(faker.finance.amount(0, 500, 2));
 //         obj['vendor'] = faker.company.name();
 //         obj['category'] = faker.commerce.department();
 

@@ -11,7 +11,7 @@ function App() {
     useEffect(() => {
         const doit = async () => {
             const data = await fetchAccount();
-            console.log(data)
+            // console.log(data)
             setAccountData(data);
         }
         doit();
@@ -23,7 +23,7 @@ function App() {
     return (
         <article className='app' >
             {accountData ? <AccountSummary data={accountData}/> : undefined}   
-            {accountData ? <AccountSpending data={accountData} today={currentDate}/> : undefined}
+            {accountData ? <AccountSpending data={accountData} currentDate={currentDate}/> : undefined}
         </article>
         
     )

@@ -1,6 +1,6 @@
 import './SpendingGraph.css'
 import React, {useState, useEffect, useRef} from 'react'
-import {getMonth, getDay, getWeekDay, formatAmount} from '../helpers/Helpers';
+import {getMonth, getDay, getWeekDay, formatAmount, buildDates, logDates, buildGraphData} from '../helpers/Helpers';
 
 function SpendingGraph({data, startDate, endDate}) {
     const [graphData, setGraphData] = useState(null)
@@ -9,42 +9,65 @@ function SpendingGraph({data, startDate, endDate}) {
 
     // const cleanedData = data.filter(a => new Date(a.date) > new Date(Date.now() - 7*86400000)).sort((a, b) => new Date(b.date) - new Date(a.date))
     
-    console.log(data)
+    console.log('%c', 'color: white', Object.values(data))
 
-    const renderGraph = data.transactions.map((trans, i) => {
-        // const totalSpend = data.transactions.reduce((prev, curr) => prev + curr.amount, 0);
-        console.log(trans, i)
-        // console.log(trans.amount);
-        // console.log(totalSpend);
-        // barHeight.current.style.height = `${trans.amount}%`
+    const weekday = Object.keys(data).map(day => day)
 
+    const eachDayArray = Object.values(data)
+        .map(day => {
+            const dayKey = day.map(key => key.id)
+            return day.reduce((acc, curr) => acc + curr.amount, 0)
+        })
 
-        return (
-            <div className=''>
-                <div ref={barHeight} className='graph-bar-height'>{formatAmount(trans.amount)}</div>
+    
 
-                <div className=''>{getWeekDay(trans.date)}</div>
-            </div>
-        )
+    const renderGraph = 
+        // let maxSpend = Math.max.apply(Math, eachDayArray.map(trans => trans.amount))
+        // let minSpend = Math.min.apply(Math, eachDayArray.map(trans => trans.amount))    
+            eachDayArray.map((trans, i) => {
+                console.log(eachDayArray, trans)
+            return (
+                <div  className='graph-bar__box'>
+                    <div 
+                        ref={barHeight} 
+                        className='graph-bar--item' 
+                        style={{height: `${Math.floor(trans/Math.max.apply(Math, eachDayArray)*100)}%`}}
+                    >
+                        {/* {formatAmount(trans)} */}
+                    </div>
+
+                    {/* <div className='graph-bar__labels'>{getWeekDay(weekday)}</div> */}
+                    <div className='graph-bar__labels'>{getWeekDay(new Date(weekday[i]))}</div>
+
+                </div>
+            )
     })
     
-    const renderHeader = 
-        <div>
-            {`${getMonth(data.startDate)} ${getDay(data.startDate)} - ${getMonth(data.endDate)} ${getDay(data.endDate)}`}
-        </div>
+    // ${Math.floor((300/(Math.max.apply(Math, Object.values(data).map(day => day.reduce((acc, cur) => acc + cur.amount, 0)))))*100)}%`
+
+
+    // const renderHeader = 
+        // <div>
+        //     {`${getMonth(data[0].date)} ${getDay(data[0].date) + 1} - ${getMonth(data.at(-1).date)} ${getDay(data.at(-1).date) + 1}`}
+        // </div>
 
     
-    // useEffect(() => {
-    //     const cleanedData = filterSortData(data, endDate, filterDays)
-    //     console.log(cleanedData);
-    // }, [])
+    useEffect(() => {
+        // logDates(data);
+        // let end = new Date(Date.now())
+        // buildGraphData(data, end, null, 14)
+        // buildDates(data);
+        console.log(data)
+        // setGraphData(Object.values(data))
+
+    },[])
     
     // logDates();
 
     return (
         <section className='graph__container'>
-            <h4 className='graph__header'>Spending - Last 7 days</h4>
-            <div>{renderHeader}</div>
+            {/* <h4 className='graph__header'>Spending - Last {getDay(data.at(-1).date) - getDay(data[0].date) + 1} days</h4> */}
+            {/* <div>{renderHeader}</div> */}
             <div className='graph__canvas'>
                 {renderGraph}        
             </div>

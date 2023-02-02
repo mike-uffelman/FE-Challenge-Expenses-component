@@ -2,18 +2,21 @@ import './AccountSpending.css';
 import {useState, useEffect} from 'react';
 import SpendingGraph from "./SpendingGraph";
 import SpendingSummary from "./SpendingSummary";
-import { filterSortData } from '../helpers/Helpers';
+import { filterSortData, buildGraphData } from '../helpers/Helpers';
 
 function AccountSpending({data}) {
     const [endDate, setEndDate] = useState(new Date(Date.now()))
     const [rangeData, setRangeData] = useState(undefined);
     // const [startDate, setStartDate] = useState(null)
-    const [filterDays, setFilterDays] = useState(7)
+    const [filterDays, setFilterDays] = useState(14)
 
     useEffect(() => {
-        const cleanedData = filterSortData(data, endDate, filterDays);
-        console.log(cleanedData);
-        setRangeData(cleanedData);
+        // console.log(data)
+        // const cleanedData = filterSortData(data, endDate, filterDays);
+        const graphDataBuild = buildGraphData(data, endDate, null, filterDays) 
+        // console.log(graphDataBuild)
+        // console.log(cleanedData);
+        setRangeData(graphDataBuild);
     }, [])
 
 
