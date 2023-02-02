@@ -1,5 +1,7 @@
 .graph__container {
     margin-bottom: 4rem;
+    overflow-x: scroll;
+
 }
 
 .graph__header {
@@ -23,19 +25,29 @@
 .graph-bar__box {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
+    /* margin: 0 .25rem; */
     justify-content: flex-end;
 }
 
 .graph-bar--item {
+    position: relative;
+    align-self: center;
     /* flex: 1; */
-    margin: 0 .25rem;
-    min-width: 1rem;
+    /* margin: 0 .5rem; */
+    min-width: 2rem;
     /* max-width: 100%; */
     /* height: 100%; */
     background-color: var(--soft-red);
     border-radius: .5rem;
     transition: all ease 225ms;
+}
+
+.graph-bar--amount {
+    display: none;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
 }
 
 .graph-bar--item:hover {

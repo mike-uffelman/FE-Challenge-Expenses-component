@@ -1,9 +1,9 @@
 const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-export const getMonth = (date) => month[new Date(date).getMonth()]
-export const getDay = (date) => new Date(date).getDate()
-export const getWeekDay = (date) => weekday[(new Date(date).getDay() + 1) % 7]
+export const getMonth = (date) => month[new Date(date).getMonth()];
+export const getDay = (date) => new Date(date).getDate();
+export const getWeekDay = (date) => weekday[(new Date(date).getDay() + 1) % 7];
 
 export const formatAmount = (amount) => {
     return new Intl.NumberFormat(navigator.languages[0], { style: 'currency', currency: 'USD'}).format(amount)
@@ -15,17 +15,10 @@ export const filterSortData = (data, endingDate, daysBack) => {
     let endDate = new Date(endingDate);
     let startDate = new Date(Date.now() - daysBack*86400000);
 
-    // console.log(endDate, startDate)
-    // startDate = new Date(startDate.setDate(startDate.getDate() - 6))
-    // let days = (endDate - startDate) / 86400000;
-    // console.log(days)
-
-    //! pass in zero spend and transactions
-
     // filters and sorts transactions within date range and descending order
     const filterSort = 
         data
-            .filter(a => new Date(a.date) >= new Date(startDate) && new Date(a.date) <= new Date(endDate))
+            .filter(a => new Date(a.date) > new Date(startDate) && new Date(a.date) <= new Date(endDate))
             .sort((a, b) => new Date(a.date) - new Date(b.date))
     
     // console.log(filterSort)
@@ -192,7 +185,11 @@ export const filterSortData = (data, endingDate, daysBack) => {
 
 // testFunctions(transactions, daysArr);
 
-
+export const fixTimeZone = (day) => {
+    const timeZoneOffset = day.getTimezoneOffset();
+    day = new Date(day.getTime() - (timeZoneOffset*60*1000))
+    return day.toISOString().split('T')[0];
+}
 
 
 export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
@@ -217,6 +214,8 @@ export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
         days = new Date(days.getTime() - (timeZoneOffset*60*1000))
         return days.toISOString().split('T')[0];
     })
+
+    
 
     // console.log('%cbuilding new function=-----------', 'background-color: yellow; color: black; font-size: 1.5rem', dateRange)
     // check data against build date range
