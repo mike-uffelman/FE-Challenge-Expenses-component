@@ -36,6 +36,7 @@
 .total__amount {
     font-size: 3rem;
     font-family: 'DM-SansBold';
+    color: var(--dark-brown);
 }
 
 .summary__change {
@@ -49,6 +50,7 @@
     
     font-size: 1.8rem;
     font-family: 'DM-SansBold';
+    color: var(--dark-brown);
 }
 
 .change__header {

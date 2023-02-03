@@ -10,13 +10,13 @@ function SpendingSummary({data}) {
             .reduce((acc, curr) => acc + curr, 0)
     )
 
-    const renderTimeframeTotal = <div>{total}</div>
+    // const renderTimeframeTotal = <div>{total}</div>
 
     return (
         <section className='spend__summary'>
             <div className='summary__total'>
                 <header className="total__header">Total this period</header>
-                <div className="total__amount">{renderTimeframeTotal}</div>
+                <div className="total__amount">{total}</div>
             </div>
             <div className="summary__change">
                 <div className='change__amount'>+2.4%</div>    

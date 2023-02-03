@@ -5,8 +5,9 @@
 }
 
 .graph__header {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-family: 'DM-SansBold';
+    color: var(--dark-brown);
 }
 
 .graph__canvas {
@@ -30,7 +31,7 @@
     /* flex: 1; */
     padding: 1rem;
     /* border: 1px solid red; */
-    width: 100%;
+    max-width: 100%;
     /* margin: 0 .25rem; */
     justify-content: flex-end;
     overflow: none;
@@ -43,28 +44,49 @@
 
 .graph-bar--item {
     position: relative;
+    z-index: 1;
     align-self: center;
     min-width: 1rem;
     width: 100%;
+    opacity: 1;
     background-color: var(--soft-red);
     border-radius: .5rem;
     transition: all ease 225ms;
+    
+    
+}
+
+.graph-bar--item:hover {
+    cursor: pointer;
+    /* background-color: var(--cyan-hover); */
+    transition: all ease 225ms;
+    background-color: var(--soft-red-hover);
 }
 
 .selected {
     background-color: var(--cyan);
+    transition: all ease 225ms;
+
+}
+
+
+.graph-bar--item.selected:hover {
+    background-color: var(--cyan-hover);
+    transition: all ease 225ms;
 }
 
 .graph-bar--amount {
     display: none;
+    z-index: 9999;
 
     padding: .5rem;
     border-radius: .5rem;
-
+    opacity: 2;
     background-color: var(--dark-brown);
     color: var(--cream);
     font-size: 1.6rem;
     font-family: DM-SansBold;
+    transition: all ease 225ms;
 }
 
 .showAmount {
@@ -78,15 +100,10 @@
     transform: translateX(-50%);
 }
 
-.graph-bar--item:hover {
-    cursor: pointer;
-    opacity: .8;
-    transition: all ease 225ms;
-}
+
 
 .graph-bar__labels {
     align-self: center;
     font-family: DM-SansBold;
     color: var(--medium-brown);
-    /* order: 3; */
 }
