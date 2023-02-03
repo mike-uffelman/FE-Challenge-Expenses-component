@@ -1,6 +1,6 @@
 .graph__container {
     margin-bottom: 4rem;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 
 }
 
@@ -14,7 +14,8 @@
     flex-direction: row;
     justify-content: space-between;
     /* align-items: flex-end; */
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
+    margin-top: 4rem;
 
     min-height: 20rem;
     width: 100%;
@@ -23,39 +24,69 @@
 }
 
 .graph-bar__box {
+    position: relative;
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    /* flex: 1; */
+    padding: 1rem;
+    /* border: 1px solid red; */
+    width: 100%;
     /* margin: 0 .25rem; */
     justify-content: flex-end;
+    overflow: none;
+}
+
+.graph-bar__container {
+    display: flex;
+    flex-direction: column;
 }
 
 .graph-bar--item {
     position: relative;
     align-self: center;
-    /* flex: 1; */
-    /* margin: 0 .5rem; */
-    min-width: 2rem;
-    /* max-width: 100%; */
-    /* height: 100%; */
+    min-width: 1rem;
+    width: 100%;
     background-color: var(--soft-red);
     border-radius: .5rem;
     transition: all ease 225ms;
 }
 
+.selected {
+    background-color: var(--cyan);
+}
+
 .graph-bar--amount {
     display: none;
+
+    padding: .5rem;
+    border-radius: .5rem;
+
+    background-color: var(--dark-brown);
+    color: var(--cream);
+    font-size: 1.6rem;
+    font-family: DM-SansBold;
+}
+
+.showAmount {
+    display: flex;
     position: absolute;
-    top: -2rem;
-    left: -2rem;
+    top: -4rem;
+    left: 50%;
+    min-width: 100%;
+
+    justify-content: center;
+    transform: translateX(-50%);
 }
 
 .graph-bar--item:hover {
     cursor: pointer;
-    background-color: var(--cyan);
+    opacity: .8;
     transition: all ease 225ms;
 }
 
 .graph-bar__labels {
     align-self: center;
+    font-family: DM-SansBold;
+    color: var(--medium-brown);
+    /* order: 3; */
 }

@@ -4,7 +4,7 @@ import {getWeekDay, getDay, getMonth, fixTimeZone, formatAmount} from '../helper
 
 function SpendingGraph({data, startDate, endDate}) {
     const [graphData, setGraphData] = useState(null)
-    const [hovered, setHovered] = useState(null)
+    const [selected, setSelected] = useState(null)
     const barHeight = useRef();
 
     const weekday = Object.keys(data).map(day => day)
@@ -15,37 +15,44 @@ function SpendingGraph({data, startDate, endDate}) {
             return day.reduce((acc, curr) => acc + curr.amount, 0)
         })
 
-    
+    const graphBarClick = (i) => {
+        if(i === selected) setSelected(null);
+        else setSelected(i);
+    }
 
     const renderGraph = 
         eachDayArray.map((trans, i) => {
-            console.log(trans)
+            const showAmount = i === selected ? 'showAmount' : '';
+            const selectedBar = i === selected ? 'selected' : '';
+
             return (
                 <div key={Math.random() * 10000} className='graph-bar__box'>
+                      
                     <div 
                         
-                        className='graph-bar--item' 
+                        className={`graph-bar--item ${selectedBar}`} 
                         style={{height: `${Math.floor(trans/Math.max.apply(Math, eachDayArray)*100)}%`}}
+                        onClick={() => graphBarClick(i)}
+
                     >
-                        <div className='graph-bar--amount'>
-                            {trans === 0 ? '' : formatAmount(trans)}
-
-                        </div>
+                        <div className={`graph-bar--amount ${showAmount}`}>
+                                {formatAmount(trans)}
+                    </div>  
                     </div>
-
+                    
                     <div className='graph-bar__labels' ref={barHeight} >{getWeekDay(new Date(weekday[i]))}</div>
-
                 </div>
             )
     })
     
     const renderHeader = 
-        <div>
-            {`${getMonth(weekday[0])} ${getDay(weekday[0] + 'T00:00:00')} - ${getMonth(weekday.at(-1) + 'T00:00:00')} ${getDay((new Date(weekday.at(-1) + 'T00:00:00')))}`}
-        </div>
+        <h2>Spending 
+            {` ${getMonth(weekday[0])} ${getDay(weekday[0] + 'T00:00:00')} - ${getMonth(weekday.at(-1) + 'T00:00:00')} ${getDay((new Date(weekday.at(-1) + 'T00:00:00')))}`}
+        </h2>
     
     useEffect(() => {
         // console.log(weekday)
+        // console.log(selected)
     },[])
 
     return (
@@ -61,9 +68,3 @@ function SpendingGraph({data, startDate, endDate}) {
 }
 
 export default SpendingGraph;
-
-
-// document.querySelectorAll('.temp-bars--low').forEach(bar => {
-//     bar.style.width = `${bar.dataset.lowTemp}%`
-//     bar.style.backgroundColor = `hsl(${Math.abs((bar.dataset.lowTemp / 100) * 300 - 300)}, 80%, 60%)`
-// });

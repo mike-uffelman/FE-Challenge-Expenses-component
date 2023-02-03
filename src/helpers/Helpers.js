@@ -1,4 +1,4 @@
-const weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const weekday = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export const getMonth = (date) => month[new Date(date).getMonth()];
@@ -32,6 +32,8 @@ export const filterSortData = (data, endingDate, daysBack) => {
 
     return cleanedData;
 }
+
+//! CLEAN UP TEST FUNCTIONS BELOW--------------------------
 
 
 // export const logDates = (data, endingDate, startingDate, filterDays = 7) => {
