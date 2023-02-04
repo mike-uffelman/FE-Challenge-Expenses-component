@@ -8,7 +8,7 @@ function AccountSpending({data}) {
     const [endDate, setEndDate] = useState(new Date(Date.now()))
     const [rangeData, setRangeData] = useState(undefined);
     // const [startDate, setStartDate] = useState(null)
-    const [filterDays, setFilterDays] = useState(14)
+    const [filterDays, setFilterDays] = useState(7)
 
     useEffect(() => {
         // console.log(data)
