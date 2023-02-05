@@ -22,8 +22,11 @@ function App() {
 
     return (
         <article className='app' >
-            {accountData ? <AccountSummary data={accountData}/> : undefined}   
-            {accountData ? <AccountSpending data={accountData} currentDate={currentDate}/> : undefined}
+            <section className='account__container'>
+                {accountData ? <AccountSummary data={accountData}/> : undefined}   
+                {accountData ? <AccountSpending data={accountData} currentDate={currentDate}/> : undefined}
+            </section>
+            
         </article>
         
     )

@@ -9,29 +9,35 @@ export const formatAmount = (amount) => {
     return new Intl.NumberFormat(navigator.languages[0], { style: 'currency', currency: 'USD'}).format(amount)
 }
 
-
-export const filterSortData = (data, endingDate, daysBack) => {
-    if (!data) return;
-    let endDate = new Date(endingDate);
-    let startDate = new Date(Date.now() - daysBack*86400000);
-
-    // filters and sorts transactions within date range and descending order
-    const filterSort = 
-        data
-            .filter(a => new Date(a.date) > new Date(startDate) && new Date(a.date) <= new Date(endDate))
-            .sort((a, b) => new Date(a.date) - new Date(b.date))
-    
-    // console.log(filterSort)
-
-    const cleanedData = {
-        'startDate': startDate,
-        'endDate': endDate,
-        'transactions': filterSort
-    }
-
-
-    return cleanedData;
+export const fixTimeZone = (day) => {
+    const timeZoneOffset = day.getTimezoneOffset();
+    day = new Date(day.getTime() - (timeZoneOffset*60*1000))
+    return day.toISOString().split('T')[0];
 }
+
+
+// export const filterSortData = (data, endingDate, daysBack) => {
+//     if (!data) return;
+//     let endDate = new Date(endingDate);
+//     let startDate = new Date(Date.now() - daysBack*86400000);
+
+//     // filters and sorts transactions within date range and descending order
+//     const filterSort = 
+//         data
+//             .filter(a => new Date(a.date) > new Date(startDate) && new Date(a.date) <= new Date(endDate))
+//             .sort((a, b) => new Date(a.date) - new Date(b.date))
+    
+//     // console.log(filterSort)
+
+//     const cleanedData = {
+//         'startDate': startDate,
+//         'endDate': endDate,
+//         'transactions': filterSort
+//     }
+
+
+//     return cleanedData;
+// }
 
 //! CLEAN UP TEST FUNCTIONS BELOW--------------------------
 
@@ -187,58 +193,49 @@ export const filterSortData = (data, endingDate, daysBack) => {
 
 // testFunctions(transactions, daysArr);
 
-export const fixTimeZone = (day) => {
-    const timeZoneOffset = day.getTimezoneOffset();
-    day = new Date(day.getTime() - (timeZoneOffset*60*1000))
-    return day.toISOString().split('T')[0];
-}
+
 
 
 export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
     if(!data) return;
     const endDate = new Date(endingDate);
     const startDate = new Date(endingDate);
+    console.log(startingDate)
 
-    // build date range
+    // build entire date range, regardless of expenses or not
     let daysArray = [];
+    // let testArray = [];
 
-    for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
+    if(startingDate) {
+        for (let i = new Date(startingDate);
+        i <= new Date(endDate); 
+        i.setDate(i.getDate() + 1)) {
+           // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
+           daysArray.push(new Date(i))
+}    
+    } else {
+        for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
              i <= new Date(endDate); 
              i.setDate(i.getDate() + 1)) {
                 // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
                 daysArray.push(new Date(i))
+        }
     }
 
-    // console.log(daysArray)
+    // console.log('%ctest array: ', 'color: orange', testArray)
+    
 
+    // simplify/normalize date generate previously by removing time
     const dateRange = daysArray.map(days =>  {
         const timeZoneOffset = days.getTimezoneOffset();
         days = new Date(days.getTime() - (timeZoneOffset*60*1000))
         return days.toISOString().split('T')[0];
     })
 
-    
-
-    // console.log('%cbuilding new function=-----------', 'background-color: yellow; color: black; font-size: 1.5rem', dateRange)
-    // check data against build date range
-
-    // combine zero spend days with transaction days
-
-    // sort zero spend and transactions by date
-
-    // return 
-
-
-    //  onsole.log(filterSortTransactions)
-
-
-
-
+    // filter and combine transactions with zero spend days in range
     const dateRangeData = compareTransactionsAndDates(dateRange, data)
+    console.log(dateRangeData)    
 
-
-    
-        
     const filterSortTransactions = 
         dateRangeData
             .filter(a => new Date(a.date) >= new Date(dateRange[0]) && new Date(a.date) <= new Date(dateRange.at(-1)))
@@ -255,20 +252,14 @@ export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
                 accumulator[key].push(current)
                 return accumulator;
             }, {})
-    //  console.log(filterSortTransactions)    
     
     return filterSortTransactions;
-
-    
-        // filter and sort transactions by date range
-    
-    
 }
 
 const compareTransactionsAndDates = (dateRange, data) => {
     // console.log(data)
     let completeRangeData = [];
-    let zeroSpendDays = dateRange.filter(day => !data.map(trans => trans.date).includes(day));
+    const zeroSpendDays = dateRange.filter(day => !data.map(trans => trans.date).includes(day));
 
     data.forEach(trans => completeRangeData.push(trans))
 
@@ -285,152 +276,152 @@ const compareTransactionsAndDates = (dateRange, data) => {
 
 
 // test combining transactions on same date using reduce
-const transactions = [
-    {
-      "id": "658d9e57-05b3-4273-9c5f-63f5a5624cb6",
-      "date": "2023-01-25",
-      "amount": 114.6,
-      "vendor": "Haag, Kovacek and Goldner",
-      "category": "Kids"
-    },
-    {
-      "id": "ebfc36ca-eea8-4719-b66c-c3ff3eb75f44",
-      "date": "2023-01-25",
-      "amount": 203.39,
-      "vendor": "Jaskolski Inc",
-      "category": "Toys"
-    },
-    {
-      "date": "2023-01-26",
-      "amount": 0
-    },
-    {
-      "id": "8f5ea49e-1316-44b5-abb1-3e7d3937d2f4",
-      "date": "2023-01-27",
-      "amount": 398.86,
-      "vendor": "Mayert - Terry",
-      "category": "Toys"
-    },
-    {
-      "id": "4bbbedfa-cea4-4e6b-a94f-141b5e5503f8",
-      "date": "2023-01-27",
-      "amount": 431.49,
-      "vendor": "Anderson, Sipes and Keeling",
-      "category": "Shoes"
-    },
-    {
-      "date": "2023-01-28",
-      "amount": 0
-    },
-    {
-      "date": "2023-01-29",
-      "amount": 0
-    },
-    {
-      "id": "fcde042e-f5d5-4408-bea3-aad44f672997",
-      "date": "2023-01-30",
-      "amount": 255.39,
-      "vendor": "Upton - Barrows",
-      "category": "Health"
-    },
-    {
-      "date": "2023-01-31",
-      "amount": 0
-    }
-  ]
+// const transactions = [
+//     {
+//       "id": "658d9e57-05b3-4273-9c5f-63f5a5624cb6",
+//       "date": "2023-01-25",
+//       "amount": 114.6,
+//       "vendor": "Haag, Kovacek and Goldner",
+//       "category": "Kids"
+//     },
+//     {
+//       "id": "ebfc36ca-eea8-4719-b66c-c3ff3eb75f44",
+//       "date": "2023-01-25",
+//       "amount": 203.39,
+//       "vendor": "Jaskolski Inc",
+//       "category": "Toys"
+//     },
+//     {
+//       "date": "2023-01-26",
+//       "amount": 0
+//     },
+//     {
+//       "id": "8f5ea49e-1316-44b5-abb1-3e7d3937d2f4",
+//       "date": "2023-01-27",
+//       "amount": 398.86,
+//       "vendor": "Mayert - Terry",
+//       "category": "Toys"
+//     },
+//     {
+//       "id": "4bbbedfa-cea4-4e6b-a94f-141b5e5503f8",
+//       "date": "2023-01-27",
+//       "amount": 431.49,
+//       "vendor": "Anderson, Sipes and Keeling",
+//       "category": "Shoes"
+//     },
+//     {
+//       "date": "2023-01-28",
+//       "amount": 0
+//     },
+//     {
+//       "date": "2023-01-29",
+//       "amount": 0
+//     },
+//     {
+//       "id": "fcde042e-f5d5-4408-bea3-aad44f672997",
+//       "date": "2023-01-30",
+//       "amount": 255.39,
+//       "vendor": "Upton - Barrows",
+//       "category": "Health"
+//     },
+//     {
+//       "date": "2023-01-31",
+//       "amount": 0
+//     }
+//   ]
 
 
-const combineTransactions = () => {
-    return transactions.reduce((accumulator, current) => {
-        let key = current.date
-        // const match = transactions.find(trans => trans.date === current.date)
-        // console.log(match)
+// const combineTransactions = () => {
+//     return transactions.reduce((accumulator, current) => {
+//         let key = current.date
+//         // const match = transactions.find(trans => trans.date === current.date)
+//         // console.log(match)
 
-        if(!accumulator[key]) {
-            accumulator[key] = [];
+//         if(!accumulator[key]) {
+//             accumulator[key] = [];
 
-        }
-        accumulator[key].push(current)
-        return accumulator;
-    }, {})
+//         }
+//         accumulator[key].push(current)
+//         return accumulator;
+//     }, {})
 
-}
+// }
 
 // console.log('%c combine transactions function using reduce', 'color: blue; font-size: 1.5rem; background-color: white',  combineTransactions());
 
 
-const data1 = {
-    "2023-01-25": [
-      {
-        "id": "658d9e57-05b3-4273-9c5f-63f5a5624cb6",
-        "date": "2023-01-25",
-        "amount": 114.6,
-        "vendor": "Haag, Kovacek and Goldner",
-        "category": "Kids"
-      },
-      {
-        "id": "ebfc36ca-eea8-4719-b66c-c3ff3eb75f44",
-        "date": "2023-01-25",
-        "amount": 203.39,
-        "vendor": "Jaskolski Inc",
-        "category": "Toys"
-      }
-    ],
-    "2023-01-26": [
-      {
-        "date": "2023-01-26",
-        "amount": 0
-      }
-    ],
-    "2023-01-27": [
-      {
-        "id": "8f5ea49e-1316-44b5-abb1-3e7d3937d2f4",
-        "date": "2023-01-27",
-        "amount": 398.86,
-        "vendor": "Mayert - Terry",
-        "category": "Toys"
-      },
-      {
-        "id": "4bbbedfa-cea4-4e6b-a94f-141b5e5503f8",
-        "date": "2023-01-27",
-        "amount": 431.49,
-        "vendor": "Anderson, Sipes and Keeling",
-        "category": "Shoes"
-      }
-    ],
-    "2023-01-28": [
-      {
-        "date": "2023-01-28",
-        "amount": 0
-      }
-    ],
-    "2023-01-29": [
-      {
-        "date": "2023-01-29",
-        "amount": 0
-      }
-    ],
-    "2023-01-30": [
-      {
-        "id": "fcde042e-f5d5-4408-bea3-aad44f672997",
-        "date": "2023-01-30",
-        "amount": 255.39,
-        "vendor": "Upton - Barrows",
-        "category": "Health"
-      }
-    ],
-    "2023-01-31": [
-      {
-        "date": "2023-01-31",
-        "amount": 0
-      }
-    ]
-  }
+// const data1 = {
+//     "2023-01-25": [
+//       {
+//         "id": "658d9e57-05b3-4273-9c5f-63f5a5624cb6",
+//         "date": "2023-01-25",
+//         "amount": 114.6,
+//         "vendor": "Haag, Kovacek and Goldner",
+//         "category": "Kids"
+//       },
+//       {
+//         "id": "ebfc36ca-eea8-4719-b66c-c3ff3eb75f44",
+//         "date": "2023-01-25",
+//         "amount": 203.39,
+//         "vendor": "Jaskolski Inc",
+//         "category": "Toys"
+//       }
+//     ],
+//     "2023-01-26": [
+//       {
+//         "date": "2023-01-26",
+//         "amount": 0
+//       }
+//     ],
+//     "2023-01-27": [
+//       {
+//         "id": "8f5ea49e-1316-44b5-abb1-3e7d3937d2f4",
+//         "date": "2023-01-27",
+//         "amount": 398.86,
+//         "vendor": "Mayert - Terry",
+//         "category": "Toys"
+//       },
+//       {
+//         "id": "4bbbedfa-cea4-4e6b-a94f-141b5e5503f8",
+//         "date": "2023-01-27",
+//         "amount": 431.49,
+//         "vendor": "Anderson, Sipes and Keeling",
+//         "category": "Shoes"
+//       }
+//     ],
+//     "2023-01-28": [
+//       {
+//         "date": "2023-01-28",
+//         "amount": 0
+//       }
+//     ],
+//     "2023-01-29": [
+//       {
+//         "date": "2023-01-29",
+//         "amount": 0
+//       }
+//     ],
+//     "2023-01-30": [
+//       {
+//         "id": "fcde042e-f5d5-4408-bea3-aad44f672997",
+//         "date": "2023-01-30",
+//         "amount": 255.39,
+//         "vendor": "Upton - Barrows",
+//         "category": "Health"
+//       }
+//     ],
+//     "2023-01-31": [
+//       {
+//         "date": "2023-01-31",
+//         "amount": 0
+//       }
+//     ]
+//   }
 
-  const sumRangeAmounts = () => {
-    const result = Object.values(data1).map(day => day.reduce((acc, curr) => acc + curr.amount, 0)).reduce((acc, curr) => acc + curr, 0)
+//   const sumRangeAmounts = () => {
+//     const result = Object.values(data1).map(day => day.reduce((acc, curr) => acc + curr.amount, 0)).reduce((acc, curr) => acc + curr, 0)
 
-    return result;
-  }
+//     return result;
+//   }
 
 //   console.log('%c sumRangeAmount Test: ', 'color: magenta; background-color: white; font-size: 2rem;', sumRangeAmounts())

@@ -4,7 +4,7 @@
 
 .graph__header {
     padding: 2.2rem 2.2rem 0 2.2rem;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-family: 'DM-SansBold';
     color: var(--dark-brown);
 }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 2rem;
+    width: 1rem;
     justify-content: flex-end;
 
     margin: 1rem;
@@ -44,7 +44,7 @@
     position: relative;
     align-self: center;
 
-    min-width: 4rem;
+    min-width: 3.5rem;
     width: 100%;
 
     background-color: var(--soft-red);
@@ -80,7 +80,7 @@
     opacity: 2;
     background-color: var(--dark-brown);
     color: var(--cream);
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     font-family: DM-SansBold;
 
     transition: all ease 225ms;
@@ -100,7 +100,37 @@
 
 .graph-bar__labels {
     align-self: center;
-
+    font-size: 1.6rem;
     font-family: DM-SansBold;
     color: var(--medium-brown);
+}
+
+@media only screen and (min-width: 26.5rem) {
+    .graph-bar--item {
+        position: relative;
+        align-self: center;
+    
+        /* min-width: 4rem; */
+        max-width: 6rem;
+        width: 100%;
+    
+        background-color: var(--soft-red);
+        border-radius: .5rem;
+        transition: all ease 225ms;
+    }
+
+    .graph__header {
+        font-size: 2.8rem;
+    }
+
+    .graph-bar--amount {
+        font-size: 1.6rem;
+    }
+
+    .graph-bar__labels {
+        font-size: 1.8rem;
+    }
+
+
+
 }
