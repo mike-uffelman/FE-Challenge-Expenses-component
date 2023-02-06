@@ -1,37 +1,43 @@
 import './SpendingSummary.css'
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 
 function SpendingSummary({data}) {
     
+    const dayCountSplit = Object.values(data).length / 2;
+
     const total = 
-        Object.values(data).slice(7)
+        Object.values(data).slice(dayCountSplit)
             .map(day => 
                 day.reduce((acc, curr) => acc + curr.amount, 0))
             .reduce((acc, curr) => acc + curr, 0)
 
-    const currenttotal = new Intl.NumberFormat(navigator.languages[0], { style: 'currency', currency: 'USD'}).format(total) 
+    const currenttotal = 
+        new Intl.NumberFormat(
+            navigator.languages[0], 
+            { style: 'currency', currency: 'USD'}
+        ).format(total) 
 
     const spendChange = () => {
-        const endIndex = Object.values(data).length / 2;
-        const previousPeriod = Object.values(data).slice(0, endIndex).map(day => day.reduce((acc, curr) => acc + curr.amount, 0)).reduce((acc, curr) => acc + curr, 0)
+        const previousPeriod = 
+            Object.values(data)
+                .slice(0, dayCountSplit)
+                .map(day => day.reduce((acc, curr) => acc + curr.amount, 0))
+                .reduce((acc, curr) => acc + curr, 0)
 
-        console.log(previousPeriod, total);
+        const changeAmount = 
+            Math.round(
+                (Number(total) - Number(previousPeriod)) 
+                    / Number(previousPeriod) * 100) 
 
-        return `${Math.round((Number(total) - Number(previousPeriod)) / Number(previousPeriod) * 100)}%`;
+        const string = changeAmount >= 0 ? `+${changeAmount}%` : `${changeAmount}%` 
+
+        return string;
 
     }
 
-    // const change = <div>{spendChange}</div>
-
-
     useEffect(() => {
-        console.log(data);
-        // console.log('%cHALF DATA', 'color: magenta', Object.values(data).slice(0, (Object.values(data).length) / 2))
-        // spendChange(data)
-        
+        // console.log(data);
     }, [])
-
-    // const renderTimeframeTotal = <div>{total}</div>
 
     return (
         <section className='spend__summary'>
@@ -41,7 +47,7 @@ function SpendingSummary({data}) {
             </div>
             <div className="summary__change">
                 <div className='change__amount'>{data ? spendChange() : null}</div>    
-                <div className='change__header'>from last month</div>
+                <div className='change__header'>from previous {dayCountSplit} days</div>
             </div>    
         </section>
     )

@@ -1,6 +1,6 @@
 import './SpendingGraph.css'
 import React, {useState, useEffect, useRef} from 'react'
-import {getWeekDay, getDay, getMonth, fixTimeZone, formatAmount} from '../helpers/Helpers';
+import {getWeekDay, getDay, getMonth, formatAmount} from '../helpers/Helpers';
 
 function SpendingGraph({data}) {
     const [selected, setSelected] = useState(null)
@@ -44,28 +44,29 @@ function SpendingGraph({data}) {
             const selectedBar = i === selected ? 'selected' : '';
 
             return (
-                <div key={Math.random() * 10000} className='graph-bar__box'>
+                <section key={Math.random() * 10000} className='graph-bar__box'>
                       
-                    <div 
+                    <button 
                         className={`graph-bar--item ${selectedBar}`} 
                         style={{height: `${Math.floor(trans/Math.max.apply(Math, eachDayArray)*100)}%`}}
                         onClick={() => graphBarClick(i)}
                         onMouseEnter={() => graphBarHover(i)}
                         onMouseLeave={() => graphBarHover(null)}
+                        // ref={focusedEl}
                     >
                         <div className={`graph-bar--amount ${showAmount}`}>
                                 {formatAmount(trans)}
                         </div>  
-                    </div>
+                    </button>
                     
                     <div className='graph-bar__labels' >{getWeekDay(new Date(weekday[i]))}</div>
-                </div>
+                </section>
             )
     })
     
     const renderHeader = 
-        <h2 className='graph__header'>Spending 
-            {` ${getMonth(weekday[0])} ${getDay(weekday[0] + 'T00:00:00')} - ${getMonth(weekday.at(-1) + 'T00:00:00')} ${getDay((new Date(weekday.at(-1) + 'T00:00:00')))}`}
+        <h2 className='graph__header'>Spending - 
+            {` ${getMonth(weekday[0])} ${getDay(weekday[0] + 'T00:00:00')} to ${getMonth(weekday.at(-1) + 'T00:00:00')} ${getDay((new Date(weekday.at(-1) + 'T00:00:00')))}`}
         </h2>
 
     return (

@@ -21,13 +21,13 @@
 }
 
 .summary__total {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
 }
 
 .total__header {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--medium-brown);
 }
 
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .change__amount {
@@ -56,7 +56,7 @@
 
 .change__header {
     align-self: flex-end;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--medium-brown);
 }
 
