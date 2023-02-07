@@ -6,5 +6,5 @@
     margin-top: 2rem;
 
     background-color: var(--very-pale-orange);
-
+    overflow: hidden;
 }

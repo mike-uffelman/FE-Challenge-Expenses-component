@@ -7,6 +7,8 @@ function SpendingGraph({data}) {
     const [hovered, setHovered] = useState(null);
     const clickEl = useRef();
 
+
+
     const weekday = Object.keys(data).map(day => day)
 
     const eachDayArray = Object.values(data)
@@ -24,6 +26,8 @@ function SpendingGraph({data}) {
     }
 
     useEffect(() => {
+        console.log(data)
+        
         const handler = (e) => {
             if(!clickEl) return;
             if(!clickEl.current.contains(e.target)) {

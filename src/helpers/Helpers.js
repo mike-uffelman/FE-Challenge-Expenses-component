@@ -10,11 +10,11 @@ export const formatAmount = (amount) => {
 }
 
 export const fixTimeZone = (day) => {
+    console.log('day: ', day.getTimezoneOffset())
     const timeZoneOffset = day.getTimezoneOffset();
     day = new Date(day.getTime() - (timeZoneOffset*60*1000))
     return day.toISOString().split('T')[0];
 }
-
 
 // export const filterSortData = (data, endingDate, daysBack) => {
 //     if (!data) return;
@@ -198,29 +198,34 @@ export const fixTimeZone = (day) => {
 
 export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
     if(!data) return;
-    const endDate = new Date(endingDate);
-    const startDate = new Date(endingDate);
-    console.log(startingDate)
+    // const endDate = fixTimeZone(new Date(endingDate));
+    // const startDate = fixTimeZone(new Date(startingDate));
+    // const startDate = new Date(endingDate);
+    // console.log(startDate)
+    // console.log(startingDate)
 
     // build entire date range, regardless of expenses or not
     let daysArray = [];
     // let testArray = [];
 
-    if(startingDate) {
-        for (let i = new Date(startingDate);
-        i <= new Date(endDate); 
-        i.setDate(i.getDate() + 1)) {
+    // if(startingDate) {
+        for (let i = new Date(startingDate+'T00:00:00');
+            i <= new Date(endingDate+'T00:00:00'); 
+            i.setDate(i.getDate() + 1)) {
            // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
-           daysArray.push(new Date(i))
-}    
-    } else {
-        for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
-             i <= new Date(endDate); 
-             i.setDate(i.getDate() + 1)) {
-                // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
                 daysArray.push(new Date(i))
-        }
-    }
+        }    
+
+        console.log(daysArray)
+    // } 
+    // else {
+    //     for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
+    //          i <= new Date(endDate); 
+    //          i.setDate(i.getDate() + 1)) {
+    //             // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
+    //             daysArray.push(new Date(i))
+    //     }
+    // }
 
     // console.log('%ctest array: ', 'color: orange', testArray)
     

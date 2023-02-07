@@ -1,0 +1,127 @@
+.form__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.2rem;
+    background-color: var(--soft-red);
+
+
+}
+
+.form__control:hover {
+    cursor: pointer;
+}
+
+.form__control--label {
+    color: var(--cream);
+    font-size: 1.8rem;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group:last-child {
+    margin-top: 1rem;
+}
+
+.form__control--icon {
+    display: flex;
+    color: var(--cream);
+    transform: scale(1.2);
+    transition: all ease 225ms;
+}
+
+.form {
+    z-index: 9999;
+    position: absolute;
+    top: 4rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 0 2.2rem 1rem 2.2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    background-color: var(--soft-red);
+}
+
+.isOpen {
+    display: flex;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    flex: 1;
+}
+
+.form__group--label {
+    font-size: 1.8rem;
+    color: var(--cream);
+    margin-bottom: .25rem;
+}
+
+.form__group--input {
+    padding: .25rem;
+    font-size: 1.8rem;
+    font-family: 'DM-SansRegular';
+    background-color: var(--very-pale-orange);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+}
+
+.form__group--input:hover {
+    cursor: pointer;
+}
+
+.form__button {
+    background-color: var(--cream);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-family: 'DM-SansBold';
+    color: var(--dark-brown);
+}
+
+.form__button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 26.5rem) {
+    .form {
+        flex-direction: column;
+    }
+
+    .form__group:last-child {
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    .form__control--label {
+        font-size: 2rem
+    }
+
+    .form__control--icon {
+        transform: scale(1.5);        
+    }
+
+    .form__box {
+        flex-direction: row;
+    }
+}

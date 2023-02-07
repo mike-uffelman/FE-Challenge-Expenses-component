@@ -10,7 +10,6 @@
 }
 
 .graph__canvas {
-    z-index: 9999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,7 +73,6 @@
 
 .graph-bar--amount {
     display: none;
-    z-index: 9999;
 
     padding: .5rem;
     border-radius: .5rem;
