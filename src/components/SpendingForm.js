@@ -18,6 +18,7 @@ function SpendingForm({startDate, endDate, onSubmit}) {
         e.preventDefault();
         console.log(e)
         onSubmit(startingDate, endingDate)
+        setFormOpen(false)
     }
 
     const isOpen = formOpen ? 'isOpen' : '';

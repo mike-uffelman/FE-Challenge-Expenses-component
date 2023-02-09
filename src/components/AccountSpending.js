@@ -7,41 +7,23 @@ import { filterSortData, buildGraphData, fixTimeZone } from '../helpers/Helpers'
 
 function AccountSpending({data}) {
     const [endDate, setEndDate] = useState(fixTimeZone(new Date(Date.now())))
-    const [rangeData, setRangeData] = useState(undefined);
-    const [periodData, setPeriodData] = useState(undefined);
     const [startDate, setStartDate] = useState(
         fixTimeZone(new Date(new Date(Date.now()).setDate(new Date(Date.now()).getDate() - (7 - 1))))
     );
+    const [currentPeriodData, setCurrentPeriodData] = useState(undefined);
+    const [priorPeriodData, setPriorPeriodData] = useState(undefined);
 
     useEffect(() => {
-        // console.log(fixTimeZone(new Date(Date.now)))
-        // console.log(fixTimeZone(new Date(Date.now())))
         console.log(startDate, endDate)
-        // console.log(data)
-        // const cleanedData = filterSortData(data, endDate, filterDays);
         const graphDataBuild = buildGraphData(data, endDate, startDate)
-        console.log('graphdatabuild -----------------------', graphDataBuild)
-        setRangeData(graphDataBuild);
 
-        // const graphAndSummaryData = buildGraphData(data, endDate, null, filterDays*2)
-        // console.log(graphAndSummaryData);
+        setCurrentPeriodData(Object.values(graphDataBuild).slice(Object.values(graphDataBuild).length / 2));
+        setPriorPeriodData(Object.values(graphDataBuild).slice(0, Object.values(graphDataBuild).length / 2));
 
-        // const startingDateTest = buildGraphData(data, endDate, "2023-01-01T00:00:00")
-        // const previousPeriod = 
-        // console.log(endDate)
-
-        // const spendSummaryData = buildGraphData(data, endDate, null, filterDays*2 )
-        
-        // setPeriodData(spendSummaryData);
-
-        getPreviousPeriod()
     }, [endDate, startDate])
 
-    const getPreviousPeriod = (startDate) => {
-        // console.log(startDate)
-    }
-
     const submitForm = (start, end) => {
+        console.log(startDate, endDate)
         console.log(start, end)
         console.log(fixTimeZone(new Date(start+'T00:00:00')), fixTimeZone(new Date(end+'T00:00:00')))
         setStartDate(fixTimeZone(new Date(start+'T00:00:00')))
@@ -52,8 +34,8 @@ function AccountSpending({data}) {
     return (
         <section className='spending__container'>
             {!startDate || !endDate ? undefined : <SpendingForm startDate={startDate} endDate={endDate} onSubmit={submitForm}/> }
-            {rangeData ? <SpendingGraph data={rangeData}/> : undefined}
-            {/* {rangeData ? <SpendingSummary data={periodData}/> : undefined} */}
+            {currentPeriodData ? <SpendingGraph currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
+            {currentPeriodData ? <SpendingSummary currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
         </section>
     )
 }

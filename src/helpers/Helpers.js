@@ -10,7 +10,7 @@ export const formatAmount = (amount) => {
 }
 
 export const fixTimeZone = (day) => {
-    console.log('day: ', day.getTimezoneOffset())
+    // console.log('day: ', day.getTimezoneOffset())
     const timeZoneOffset = day.getTimezoneOffset();
     day = new Date(day.getTime() - (timeZoneOffset*60*1000))
     return day.toISOString().split('T')[0];
@@ -198,25 +198,24 @@ export const fixTimeZone = (day) => {
 
 export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
     if(!data) return;
-    // const endDate = fixTimeZone(new Date(endingDate));
-    // const startDate = fixTimeZone(new Date(startingDate));
-    // const startDate = new Date(endingDate);
-    // console.log(startDate)
-    // console.log(startingDate)
+    let previousPeriodStart = new Date(startingDate + 'T00:00:00');
+    // console.log(previousPeriodStart)
+    previousPeriodStart = fixTimeZone(new Date(previousPeriodStart.setDate(previousPeriodStart.getDate() - (new Date(endingDate + 'T00:00:00').getDate() - new Date(startingDate + 'T00:00:00').getDate() + 1))))
+
 
     // build entire date range, regardless of expenses or not
     let daysArray = [];
     // let testArray = [];
 
     // if(startingDate) {
-        for (let i = new Date(startingDate+'T00:00:00');
+        for (let i = new Date(previousPeriodStart+'T00:00:00');
             i <= new Date(endingDate+'T00:00:00'); 
             i.setDate(i.getDate() + 1)) {
            // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
                 daysArray.push(new Date(i))
         }    
 
-        console.log(daysArray)
+        // console.log(daysArray)
     // } 
     // else {
     //     for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
@@ -239,7 +238,7 @@ export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
 
     // filter and combine transactions with zero spend days in range
     const dateRangeData = compareTransactionsAndDates(dateRange, data)
-    console.log(dateRangeData)    
+    // console.log(dateRangeData)    
 
     const filterSortTransactions = 
         dateRangeData
