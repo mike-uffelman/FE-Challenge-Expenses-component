@@ -9,263 +9,43 @@ export const formatAmount = (amount) => {
     return new Intl.NumberFormat(navigator.languages[0], { style: 'currency', currency: 'USD'}).format(amount)
 }
 
+// removes the timezone from the date and returns a date string to simplify the date
 export const fixTimeZone = (day) => {
-    // console.log('day: ', day.getTimezoneOffset())
     const timeZoneOffset = day.getTimezoneOffset();
     day = new Date(day.getTime() - (timeZoneOffset*60*1000))
     return day.toISOString().split('T')[0];
 }
 
-// export const filterSortData = (data, endingDate, daysBack) => {
-//     if (!data) return;
-//     let endDate = new Date(endingDate);
-//     let startDate = new Date(Date.now() - daysBack*86400000);
+// returns the start of the prior period for spend change calculation
+const getPriorPeriodStart = (endingDate, startingDate) => {
+    const end = new Date(endingDate);
+    const start = new Date(startingDate);
+    let daysBack = (end - start) / (1000* 60 * 60 * 24)
 
-//     // filters and sorts transactions within date range and descending order
-//     const filterSort = 
-//         data
-//             .filter(a => new Date(a.date) > new Date(startDate) && new Date(a.date) <= new Date(endDate))
-//             .sort((a, b) => new Date(a.date) - new Date(b.date))
-    
-//     // console.log(filterSort)
+    const pastPeriodStart = 
+        new Date(
+            new Date(start)
+                .setDate(new Date(start).getDate() - daysBack))
 
-//     const cleanedData = {
-//         'startDate': startDate,
-//         'endDate': endDate,
-//         'transactions': filterSort
-//     }
-
-
-//     return cleanedData;
-// }
-
-//! CLEAN UP TEST FUNCTIONS BELOW--------------------------
-
-
-// export const logDates = (data, endingDate, startingDate, filterDays = 7) => {
-//     console.log('%cSTART LOGDATES FUNCTION...............', 'color:orange')
-//     console.log(data.endDate)
-//     let endDate = new Date(data.endDate);
-//     let startDate = new Date(endDate)
-//     let daysArray = []
-
-//     // const cleanData = data.filter(a => new Date(a.date) > new Date(Date.now() - 7*86400000)).sort((a, b) => new Date(b.date) - new Date(a.date))
-
-//     const transactions = [
-//         {
-//             "date": "2023-01-24",
-//             "amount": 319.84,
-//             "vendor": "Cartwright, Heaney and Spinka",
-//             "category": "Home"
-//         },
-//         {
-//             "date": "2023-01-25",
-//             "amount": 400.03,
-//             "vendor": "Thompson - Roberts",
-//             "category": "Electronics"
-//         },
-//         {
-//             "date": "2023-01-29",
-//             "amount": 12.01,
-//             "vendor": "Reynolds - Feil",
-//             "category": "Toys"
-//         },
-//         {
-//             "date": "2023-01-27",
-//             "amount": 720.76,
-//             "vendor": "Weissnat Inc",
-//             "category": "Jewelery"
-//         },
-//         {
-//             "date": "2023-01-20",
-//             "amount": 1000,
-//             "vendor": "Weissnat Inc",
-//             "category": "Jewelery"
-//           }
-//       ]
-
-//     // build dateRange
-//     for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
-//              i <= endDate; 
-//              i.setDate(i.getDate() + 1)) {
-
-//                 let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
-//                 console.log(testDate.toDateString())
-
-//                 daysArray.push(new Date(i))
-
-                
-//     }
-//     console.log(daysArray)
-
-//     daysArray.map(days =>  {
-//         const timeZoneOffset = days.getTimezoneOffset();
-//         days = new Date(days.getTime() - (timeZoneOffset*60*1000))
-//         return days.toISOString().split('T')[0]
-
-
-//     })
-//     console.log('DAYSARRAY: ', daysArray)
-
-
-   
-//     let completeRangeData = [];
-//     let zeroSpendDays = daysArr.filter(day => !transactions.map(trans => trans.date).includes(day));
-
-
-//     transactions.forEach(trans => completeRangeData.push(trans))
-
-//     completeRangeData.push(zeroSpendDays.map(day => {
-//         return {
-//             "date": day,
-//             "amount": 0
-//         }
-//     }))
-
-//     console.log(completeRangeData.flat())
-    
-//     console.log('%cEND LOGDATES FUNCTION------------------', 'color: orange')
-// }
-
-// ------------ filter daysRange by transactions to get final array for mapping ------------
-// const transactions = [
-//     {
-//       "date": "2023-01-24",
-//       "amount": 319.84,
-//       "vendor": "Cartwright, Heaney and Spinka",
-//       "category": "Home"
-//     },
-//     {
-//       "date": "2023-01-25",
-//       "amount": 400.03,
-//       "vendor": "Thompson - Roberts",
-//       "category": "Electronics"
-//     },
-//     {
-//       "date": "2023-01-29",
-//       "amount": 12.01,
-//       "vendor": "Reynolds - Feil",
-//       "category": "Toys"
-//     },
-//     {
-//       "date": "2023-01-27",
-//       "amount": 720.76,
-//       "vendor": "Weissnat Inc",
-//       "category": "Jewelery"
-//     }
-//   ]
-//   const transactionsDates = [
-//       "2023-01-24",
-//       "2023-01-25",
-//       "2023-01-22",
-//       "2023-01-27",
-//   ]
-
-//   const daysArr = [
-//     "2023-01-23",
-//     "2023-01-24",
-//     "2023-01-25",
-//     "2023-01-26",
-//     "2023-01-27",
-//     "2023-01-28",
-//     "2023-01-29"
-//   ]
-
-  
-
-
-
-// const testFunctions = (transactions, daysArr) => {
-//     let completeRangeData = [];
-//     let zeroSpendDays = daysArr.filter(day => !transactions.map(trans => trans.date).includes(day));
-
-//     transactions.forEach(trans => completeRangeData.push(trans))
-
-//     completeRangeData.push(zeroSpendDays.map(day => {
-//         return {
-//             "date": day,
-//             "amount": 0
-//         }
-//     }))
-
-//     console.log(completeRangeData.flat())
-// }
-
-// testFunctions(transactions, daysArr);
-
-
-
-
-export const buildGraphData = (data, endingDate, startingDate, filterDays) => {
-    if(!data) return;
-    let previousPeriodStart = new Date(startingDate + 'T00:00:00');
-    // console.log(previousPeriodStart)
-    previousPeriodStart = fixTimeZone(new Date(previousPeriodStart.setDate(previousPeriodStart.getDate() - (new Date(endingDate + 'T00:00:00').getDate() - new Date(startingDate + 'T00:00:00').getDate() + 1))))
-
-
-    // build entire date range, regardless of expenses or not
-    let daysArray = [];
-    // let testArray = [];
-
-    // if(startingDate) {
-        for (let i = new Date(previousPeriodStart+'T00:00:00');
-            i <= new Date(endingDate+'T00:00:00'); 
-            i.setDate(i.getDate() + 1)) {
-           // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
-                daysArray.push(new Date(i))
-        }    
-
-        // console.log(daysArray)
-    // } 
-    // else {
-    //     for (let i = new Date(startDate.setDate(startDate.getDate() - (filterDays - 1)));
-    //          i <= new Date(endDate); 
-    //          i.setDate(i.getDate() + 1)) {
-    //             // let testDate = new Date(i.getFullYear(), i.getMonth(), i.getDate()) 
-    //             daysArray.push(new Date(i))
-    //     }
-    // }
-
-    // console.log('%ctest array: ', 'color: orange', testArray)
-    
-
-    // simplify/normalize date generate previously by removing time
-    const dateRange = daysArray.map(days =>  {
-        const timeZoneOffset = days.getTimezoneOffset();
-        days = new Date(days.getTime() - (timeZoneOffset*60*1000))
-        return days.toISOString().split('T')[0];
-    })
-
-    // filter and combine transactions with zero spend days in range
-    const dateRangeData = compareTransactionsAndDates(dateRange, data)
-    // console.log(dateRangeData)    
-
-    const filterSortTransactions = 
-        dateRangeData
-            .filter(a => new Date(a.date) >= new Date(dateRange[0]) && new Date(a.date) <= new Date(dateRange.at(-1)))
-            .sort((a, b) => new Date(a.date) - new Date(b.date))
-            .reduce((accumulator, current) => {
-                let key = current.date
-                // const match = transactions.find(trans => trans.date === current.date)
-                // console.log(match)
-        
-                if(!accumulator[key]) {
-                    accumulator[key] = [];
-        
-                }
-                accumulator[key].push(current)
-                return accumulator;
-            }, {})
-    
-    return filterSortTransactions;
+    return fixTimeZone(pastPeriodStart)
 }
 
-const compareTransactionsAndDates = (dateRange, data) => {
-    // console.log(data)
+// creates an array for all days between prior period start and current end date
+const getAllDaysInRange = (endingDate, priorPeriodStart) => {
+    let daysArray = [];
+    for (let i = new Date(priorPeriodStart+'T00:00:00');
+        i <= new Date(endingDate+'T00:00:00'); 
+        i.setDate(i.getDate() + 1)) {
+            daysArray.push(new Date(i))
+        }
+
+    return daysArray;
+}
+
+// compares the desired date range with all transactions, if transaction(s) exist for a day uses the transaction otherwise uses the zero spend day to build new array
+const getZeroSpendDays = (dateRange, data) => {
     let completeRangeData = [];
     const zeroSpendDays = dateRange.filter(day => !data.map(trans => trans.date).includes(day));
-
-    data.forEach(trans => completeRangeData.push(trans))
 
     completeRangeData.push(zeroSpendDays.map(day => {
         return {
@@ -273,159 +53,55 @@ const compareTransactionsAndDates = (dateRange, data) => {
             "amount": 0
         }
     }))
-
-    // console.log(completeRangeData.flat())
     return completeRangeData.flat()
 }
 
+const reduceDailyTransactions = (data) => {
+    return data
+        .reduce((accumulator, current) => {
+            let key = current.date
+            if(!accumulator[key]) accumulator[key] = [];
+            accumulator[key].push(current)
+            return accumulator;
+        }, {})
+}
 
-// test combining transactions on same date using reduce
-// const transactions = [
-//     {
-//       "id": "658d9e57-05b3-4273-9c5f-63f5a5624cb6",
-//       "date": "2023-01-25",
-//       "amount": 114.6,
-//       "vendor": "Haag, Kovacek and Goldner",
-//       "category": "Kids"
-//     },
-//     {
-//       "id": "ebfc36ca-eea8-4719-b66c-c3ff3eb75f44",
-//       "date": "2023-01-25",
-//       "amount": 203.39,
-//       "vendor": "Jaskolski Inc",
-//       "category": "Toys"
-//     },
-//     {
-//       "date": "2023-01-26",
-//       "amount": 0
-//     },
-//     {
-//       "id": "8f5ea49e-1316-44b5-abb1-3e7d3937d2f4",
-//       "date": "2023-01-27",
-//       "amount": 398.86,
-//       "vendor": "Mayert - Terry",
-//       "category": "Toys"
-//     },
-//     {
-//       "id": "4bbbedfa-cea4-4e6b-a94f-141b5e5503f8",
-//       "date": "2023-01-27",
-//       "amount": 431.49,
-//       "vendor": "Anderson, Sipes and Keeling",
-//       "category": "Shoes"
-//     },
-//     {
-//       "date": "2023-01-28",
-//       "amount": 0
-//     },
-//     {
-//       "date": "2023-01-29",
-//       "amount": 0
-//     },
-//     {
-//       "id": "fcde042e-f5d5-4408-bea3-aad44f672997",
-//       "date": "2023-01-30",
-//       "amount": 255.39,
-//       "vendor": "Upton - Barrows",
-//       "category": "Health"
-//     },
-//     {
-//       "date": "2023-01-31",
-//       "amount": 0
-//     }
-//   ]
+const getFilteredTransactions = (dateRange, data) => {
+    return data
+            .filter(a => {
+                return new Date(a.date) >= new Date(dateRange[0]) && new Date(a.date) <= new Date(dateRange.at(-1))
+            })
 
+}
 
-// const combineTransactions = () => {
-//     return transactions.reduce((accumulator, current) => {
-//         let key = current.date
-//         // const match = transactions.find(trans => trans.date === current.date)
-//         // console.log(match)
+const combineZeroAndTransactions = (zeroSpend, filteredTransactions) => {
+    return [...zeroSpend, ...filteredTransactions].sort((a, b) => new Date(a.date) - new Date(b.date));
+}
 
-//         if(!accumulator[key]) {
-//             accumulator[key] = [];
+export const buildGraphData = (data, endingDate, startingDate) => {
+    if(!data) return;
 
-//         }
-//         accumulator[key].push(current)
-//         return accumulator;
-//     }, {})
+    // get prior period start date
+    const priorPeriodStartDate = getPriorPeriodStart(endingDate, startingDate)
+    
+    // get a dateRange array of days from prior period start to current end date
+    const allDaysInRange = getAllDaysInRange(endingDate, priorPeriodStartDate)
 
-// }
+    // stringify and set dates to "YYYY-MM-DD" format
+    const dateRange = allDaysInRange.map(day => fixTimeZone(day))
+    
+    // compare the desired date range to the transactions to identify zero spend days (i.e. does not exist)
+    const zeroSpendDays = getZeroSpendDays(dateRange, data)
+    
+    // filter all transactions with our desired date range, return only transactions within range
+    const filteredTransactions = getFilteredTransactions(dateRange, data)
 
-// console.log('%c combine transactions function using reduce', 'color: blue; font-size: 1.5rem; background-color: white',  combineTransactions());
+    // combine zero spend and filtered date transactions, and sort
+    const combineTransactions = combineZeroAndTransactions(zeroSpendDays, filteredTransactions)
 
+    // reduce each day down to a single object with array of transactions, i.e. combine multi-transaction days into one with a list of transactions
+    const reduceDownDates = reduceDailyTransactions(combineTransactions); 
 
-// const data1 = {
-//     "2023-01-25": [
-//       {
-//         "id": "658d9e57-05b3-4273-9c5f-63f5a5624cb6",
-//         "date": "2023-01-25",
-//         "amount": 114.6,
-//         "vendor": "Haag, Kovacek and Goldner",
-//         "category": "Kids"
-//       },
-//       {
-//         "id": "ebfc36ca-eea8-4719-b66c-c3ff3eb75f44",
-//         "date": "2023-01-25",
-//         "amount": 203.39,
-//         "vendor": "Jaskolski Inc",
-//         "category": "Toys"
-//       }
-//     ],
-//     "2023-01-26": [
-//       {
-//         "date": "2023-01-26",
-//         "amount": 0
-//       }
-//     ],
-//     "2023-01-27": [
-//       {
-//         "id": "8f5ea49e-1316-44b5-abb1-3e7d3937d2f4",
-//         "date": "2023-01-27",
-//         "amount": 398.86,
-//         "vendor": "Mayert - Terry",
-//         "category": "Toys"
-//       },
-//       {
-//         "id": "4bbbedfa-cea4-4e6b-a94f-141b5e5503f8",
-//         "date": "2023-01-27",
-//         "amount": 431.49,
-//         "vendor": "Anderson, Sipes and Keeling",
-//         "category": "Shoes"
-//       }
-//     ],
-//     "2023-01-28": [
-//       {
-//         "date": "2023-01-28",
-//         "amount": 0
-//       }
-//     ],
-//     "2023-01-29": [
-//       {
-//         "date": "2023-01-29",
-//         "amount": 0
-//       }
-//     ],
-//     "2023-01-30": [
-//       {
-//         "id": "fcde042e-f5d5-4408-bea3-aad44f672997",
-//         "date": "2023-01-30",
-//         "amount": 255.39,
-//         "vendor": "Upton - Barrows",
-//         "category": "Health"
-//       }
-//     ],
-//     "2023-01-31": [
-//       {
-//         "date": "2023-01-31",
-//         "amount": 0
-//       }
-//     ]
-//   }
+    return reduceDownDates
+}
 
-//   const sumRangeAmounts = () => {
-//     const result = Object.values(data1).map(day => day.reduce((acc, curr) => acc + curr.amount, 0)).reduce((acc, curr) => acc + curr, 0)
-
-//     return result;
-//   }
-
-//   console.log('%c sumRangeAmount Test: ', 'color: magenta; background-color: white; font-size: 2rem;', sumRangeAmounts())

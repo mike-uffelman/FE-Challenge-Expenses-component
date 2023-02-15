@@ -6,25 +6,21 @@ import AccountSpending from './components/AccountSpending';
 
 function App() {
     const [accountData, setAccountData] = useState(null);
-    const [currentDate, setCurrentDate] = useState(null);
 
     useEffect(() => {
-        const doit = async () => {
+        // fetch account transactions for app rendering
+        const fetchAccountData = async () => {
             const data = await fetchAccount();
-            // console.log(data)
             setAccountData(data);
         }
-        doit();
-
-        setCurrentDate(new Date(Date.now()))
-        // setAccountData(data);
+        fetchAccountData();
     }, [])
 
     return (
         <article className='app' >
             <section className='account__container'>
                 {accountData ? <AccountSummary data={accountData}/> : undefined}   
-                {accountData ? <AccountSpending data={accountData} currentDate={currentDate}/> : undefined}
+                {accountData ? <AccountSpending data={accountData}/> : undefined}
             </section>
             
         </article>

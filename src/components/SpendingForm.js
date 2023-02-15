@@ -2,35 +2,30 @@ import './SpendingForm.css';
 
 import {IconContext} from 'react-icons';
 import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
-import {useState, useEffect} from 'react';
-import { fixTimeZone } from '../helpers/Helpers';
+import {useState} from 'react';
 
 function SpendingForm({startDate, endDate, onSubmit}) {
     const [formOpen, setFormOpen] = useState(true);
     const [startingDate, setStartingDate] = useState(startDate);
     const [endingDate, setEndingDate] = useState(endDate)
 
+    // form open/close control handler
     const toggleForm = () => {
         setFormOpen(!formOpen)
     }
 
+    // form submit event handler, calls onSubmit with start and end dates, closes form
     const submitDates = (e) => {
         e.preventDefault();
-        console.log(e)
         onSubmit(startingDate, endingDate)
         setFormOpen(false)
     }
 
-    const isOpen = formOpen ? 'isOpen' : '';
-
+    // conditional icon rendering based on if form is open
     const optionsIcon = formOpen ? <AiOutlineUp  /> : <AiOutlineDown />
 
-    useEffect(() => {
-        // console.log(fixTimeZone(endDate))
-    }, [])
-
-
     const renderForm = () => {
+        const isOpen = formOpen ? 'isOpen' : '';
 
         return (
             <form onSubmit={submitDates} className={`form ${isOpen}`}>
@@ -54,7 +49,6 @@ function SpendingForm({startDate, endDate, onSubmit}) {
                         ></input>     
                     </div>
                 </section>
-                
 
                 <button type='submit' className='form__button'>Submit</button>
                 

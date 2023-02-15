@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import SpendingGraph from "./SpendingGraph";
 import SpendingSummary from "./SpendingSummary";
 import SpendingForm from './SpendingForm';
-import { filterSortData, buildGraphData, fixTimeZone } from '../helpers/Helpers';
+import { fixTimeZone, buildGraphData } from '../helpers/Helpers';
 
 function AccountSpending({data}) {
     const [endDate, setEndDate] = useState(fixTimeZone(new Date(Date.now())))
@@ -13,28 +13,27 @@ function AccountSpending({data}) {
     const [currentPeriodData, setCurrentPeriodData] = useState(undefined);
     const [priorPeriodData, setPriorPeriodData] = useState(undefined);
 
+    // on initial render and start/end date updates build the graph data arrays and assign to respective state
     useEffect(() => {
-        console.log(startDate, endDate)
         const graphDataBuild = buildGraphData(data, endDate, startDate)
 
         setCurrentPeriodData(Object.values(graphDataBuild).slice(Object.values(graphDataBuild).length / 2));
         setPriorPeriodData(Object.values(graphDataBuild).slice(0, Object.values(graphDataBuild).length / 2));
 
-    }, [endDate, startDate])
+    }, [data, endDate, startDate])
 
+    // on form submit set new values for start/end
     const submitForm = (start, end) => {
-        console.log(startDate, endDate)
-        console.log(start, end)
-        console.log(fixTimeZone(new Date(start+'T00:00:00')), fixTimeZone(new Date(end+'T00:00:00')))
         setStartDate(fixTimeZone(new Date(start+'T00:00:00')))
         setEndDate(fixTimeZone(new Date(end+'T00:00:00')))
-        
     }
 
     return (
         <section className='spending__container'>
             {!startDate || !endDate ? undefined : <SpendingForm startDate={startDate} endDate={endDate} onSubmit={submitForm}/> }
+
             {currentPeriodData ? <SpendingGraph currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
+            
             {currentPeriodData ? <SpendingSummary currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
         </section>
     )
