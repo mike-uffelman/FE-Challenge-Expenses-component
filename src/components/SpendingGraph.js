@@ -15,7 +15,8 @@ function SpendingGraph({currentData}) {
             return day.reduce((acc, curr) => acc + curr.amount, 0)
         })
 
-    const graphBarClick = (i) => {
+    const graphBarClick = (i, e) => {
+        console.log(e)
         if(i === selected) setSelected(null);
         else setSelected(i);
     }
@@ -30,6 +31,7 @@ function SpendingGraph({currentData}) {
             if(!clickEl) return;
             if(!clickEl.current.contains(e.target)) {
                 setSelected(null)
+                graphBarHover(null)
             }
         }
 
@@ -55,6 +57,8 @@ function SpendingGraph({currentData}) {
                         onMouseEnter={() => graphBarHover(i)}
                         onMouseLeave={() => graphBarHover(null)}
                         onFocus={() => graphBarHover(i)}
+                        onTouchEnd={() => graphBarHover(i)}
+                        onKeyDown={(e) => graphBarClick(i, e)}
                     >
                         <div className={`graph-bar--amount ${showAmount}`}>
                                 {formatAmount(trans)}

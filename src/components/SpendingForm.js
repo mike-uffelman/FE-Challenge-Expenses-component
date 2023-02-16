@@ -5,7 +5,7 @@ import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
 import {useState} from 'react';
 
 function SpendingForm({startDate, endDate, onSubmit}) {
-    const [formOpen, setFormOpen] = useState(true);
+    const [formOpen, setFormOpen] = useState(false);
     const [startingDate, setStartingDate] = useState(startDate);
     const [endingDate, setEndingDate] = useState(endDate)
 
@@ -43,7 +43,7 @@ function SpendingForm({startDate, endDate, onSubmit}) {
                         <label className='form__group--label'>End</label>
                         <input 
                             onChange={(e) => setEndingDate(e.target.value)}
-                            value={endDate}
+                            value={endingDate}
                             className='form__group--input' 
                             type='date'
                         ></input>     

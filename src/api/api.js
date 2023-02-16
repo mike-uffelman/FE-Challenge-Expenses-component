@@ -8,14 +8,15 @@ export const fetchAccount = async() => {
 }
 
 
+// function to generate transaction data------------------
+
 // const buildDataSet = () => {
 //     let transactions = [];
-
 
 //     for (let i = 0; i < 600; i++) {
 //         let obj = {};
 //         obj['id'] = faker.datatype.uuid()
-//         obj['date'] = faker.date.between('2022-01-01', '2023-02-05');
+//         obj['date'] = faker.date.between('2022-01-01', '2023-02-16');
 //         obj['amount'] = Number(faker.finance.amount(0, 100, 2));
 //         obj['vendor'] = faker.company.name();
 //         obj['category'] = faker.commerce.department();
@@ -27,8 +28,6 @@ export const fetchAccount = async() => {
 //     }
         
 //     return transactions
-
-    
 // }
 
 // console.log(buildDataSet())
