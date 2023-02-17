@@ -10,24 +10,25 @@ export const fetchAccount = async() => {
 
 // function to generate transaction data------------------
 
-// const buildDataSet = () => {
-//     let transactions = [];
+// eslint-disable-next-line no-unused-vars
+const buildDataSet = () => {
+    let transactions = [];
 
-//     for (let i = 0; i < 600; i++) {
-//         let obj = {};
-//         obj['id'] = faker.datatype.uuid()
-//         obj['date'] = faker.date.between('2022-01-01', '2023-02-16');
-//         obj['amount'] = Number(faker.finance.amount(0, 100, 2));
-//         obj['vendor'] = faker.company.name();
-//         obj['category'] = faker.commerce.department();
+    for (let i = 0; i < 600; i++) {
+        let obj = {};
+        obj['id'] = faker.datatype.uuid()
+        obj['date'] = faker.date.between('2022-01-01', '2023-02-16');
+        obj['amount'] = Number(faker.finance.amount(0, 100, 2));
+        obj['vendor'] = faker.company.name();
+        obj['category'] = faker.commerce.department();
 
-//         const timeZoneOffset = new Date(obj['date']).getTimezoneOffset();
-//         obj['date'] = new Date(obj['date'].getTime() - (timeZoneOffset*60*1000)).toISOString().split('T')[0];    
+        const timeZoneOffset = new Date(obj['date']).getTimezoneOffset();
+        obj['date'] = new Date(obj['date'].getTime() - (timeZoneOffset*60*1000)).toISOString().split('T')[0];    
 
-//         transactions.push(obj)
-//     }
+        transactions.push(obj)
+    }
         
-//     return transactions
-// }
+    return transactions
+}
 
 // console.log(buildDataSet())

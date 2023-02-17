@@ -11,7 +11,8 @@
     align-items: center;
     padding: 1rem 2.2rem;
     background-color: var(--soft-red);
-
+    border: none;
+    font-family: inherit;
 
 }
 
@@ -36,8 +37,14 @@
 .form__control--icon {
     display: flex;
     color: var(--cream);
+    background-color: inherit;
+    border: none;
     transform: scale(1.2);
     transition: all ease 225ms;
+}
+
+.form__control--icon:hover {
+    cursor: pointer;
 }
 
 .form {

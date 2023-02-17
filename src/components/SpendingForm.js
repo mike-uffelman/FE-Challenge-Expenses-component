@@ -60,11 +60,12 @@ function SpendingForm({startDate, endDate, onSubmit}) {
         <section className='form__container'>
             <div className='form__control' onClick={toggleForm}>
                 <h3 className='form__control--label'>Options</h3>
-                <span className='form__control--icon'>
+                <button className='form__control--icon'>
                     <IconContext.Provider value={{style: {fontSize: '2rem'}}}>
                         {optionsIcon}
-                    </IconContext.Provider>
-                </span>
+                    </IconContext.Provider>    
+                </button>
+                
             </div>
             {renderForm()}
         </section>

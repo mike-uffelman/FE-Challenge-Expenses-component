@@ -1,5 +1,5 @@
 .graph__container {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .graph__header {
@@ -29,7 +29,10 @@
     flex: 1;
     justify-content: flex-end;
 
-    margin: .5rem;
+
+    max-width: 2rem;
+
+    margin: .75rem;
     overflow: none;
 }
 
@@ -42,9 +45,9 @@
     position: relative;
     align-self: center;
 
-    min-width: 2rem;
+    /* min-width: 2rem; */
     width: 100%;
-
+    
     background-color: var(--soft-red);
     border-radius: .5rem;
     transition: all ease 225ms;
@@ -105,8 +108,13 @@
 }
 
 @media only screen and (min-width: 26.5rem) {
+    .graph-bar__box {
+        min-width: 3rem;
+    }
+    
     .graph-bar--item {
-        min-width: 5rem;
+        min-width: 4rem;
+        width: 100%;
     }
 
     .graph__header {
