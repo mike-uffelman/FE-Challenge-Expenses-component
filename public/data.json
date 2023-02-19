@@ -261,7 +261,7 @@
     },
     {
       "id": "cc18f687-915d-479b-bb78-d8fbc543e536",
-      "date": "2022-08-05",
+      "date": "2022-08-15",
       "amount": 61.05,
       "vendor": "Turcotte LLC",
       "category": "Clothing"
@@ -1088,7 +1088,7 @@
     {
       "id": "919b4e29-8ca6-4db4-b241-4b0a31734bd1",
       "date": "2023-02-14",
-      "amount": 36.26,
+      "amount": 88.26,
       "vendor": "Trantow and Sons",
       "category": "Kids"
     },
@@ -1129,7 +1129,7 @@
     },
     {
       "id": "1678c810-b5e4-4173-9eca-a417514f5876",
-      "date": "2023-02-15",
+      "date": "2023-02-25",
       "amount": 84.33,
       "vendor": "Tremblay Group",
       "category": "Garden"
@@ -1451,7 +1451,7 @@
     },
     {
       "id": "90e45303-151f-46df-8c0d-8660cc459808",
-      "date": "2023-02-14",
+      "date": "2023-02-01",
       "amount": 98.79,
       "vendor": "Glover, Bartell and Block",
       "category": "Industrial"
@@ -1668,29 +1668,29 @@
     },
     {
       "id": "813d08b9-2735-486a-a55b-f31f0f9234c3",
-      "date": "2022-02-02",
-      "amount": 19.06,
+      "date": "2023-02-18",
+      "amount": 200.06,
       "vendor": "Herman, Zieme and Schmeler",
       "category": "Automotive"
     },
     {
       "id": "49d6237e-44e0-4cfa-ac02-f700033a8ea4",
-      "date": "2022-12-26",
+      "date": "2023-02-17",
       "amount": 74.69,
       "vendor": "Nicolas and Sons",
       "category": "Shoes"
     },
     {
       "id": "2e6e2cd7-6f33-432f-a6b1-bc7a9cb94b95",
-      "date": "2022-08-14",
-      "amount": 72.91,
+      "date": "2023-02-19",
+      "amount": 100.91,
       "vendor": "Larson, Hamill and Stamm",
       "category": "Music"
     },
     {
       "id": "167ad8a6-01b8-4411-b2b8-0450ba188fe1",
       "date": "2023-02-15",
-      "amount": 52.27,
+      "amount": 90.27,
       "vendor": "Lesch and Sons",
       "category": "Sports"
     },
@@ -3418,7 +3418,7 @@
     },
     {
       "id": "fbc13927-081d-4dcd-bdc5-0179e2c82c50",
-      "date": "2023-02-14",
+      "date": "2023-02-24",
       "amount": 53.83,
       "vendor": "Mohr Group",
       "category": "Computers"

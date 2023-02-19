@@ -2,12 +2,12 @@ import './SpendingForm.css';
 
 import {IconContext} from 'react-icons';
 import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
-import {useState} from 'react';
+import {useState, useEffect, useRef} from 'react';
 
-function SpendingForm({startDate, endDate, onSubmit}) {
-    const [formOpen, setFormOpen] = useState(false);
+function SpendingForm({startDate, endDate, onSubmit, formOpen, setFormOpen}) {
     const [startingDate, setStartingDate] = useState(startDate);
     const [endingDate, setEndingDate] = useState(endDate)
+    const clickEl = useRef();
 
     // form open/close control handler
     const toggleForm = () => {
@@ -20,6 +20,20 @@ function SpendingForm({startDate, endDate, onSubmit}) {
         onSubmit(startingDate, endingDate)
         setFormOpen(false)
     }
+
+    // close the form if clicked outside of form
+    useEffect(() => {
+        const handler = (e) => {
+            if(!clickEl) return;
+            if(!clickEl.current.contains(e.target)) {
+                setFormOpen(false)
+            }
+        }
+
+        document.addEventListener('click', handler, true);
+
+        return () => document.removeEventListener('click', handler)
+    }, [setFormOpen])
 
     // conditional icon rendering based on if form is open
     const optionsIcon = formOpen ? <AiOutlineUp  /> : <AiOutlineDown />
@@ -57,7 +71,7 @@ function SpendingForm({startDate, endDate, onSubmit}) {
     }
 
     return (
-        <section className='form__container'>
+        <section className='form__container' ref={clickEl}>
             <div className='form__control' onClick={toggleForm}>
                 <h3 className='form__control--label'>Options</h3>
                 <button className='form__control--icon'>

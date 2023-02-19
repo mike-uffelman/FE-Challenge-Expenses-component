@@ -2,7 +2,7 @@ import './SpendingGraph.css'
 import React, {useState, useEffect, useRef} from 'react'
 import {getWeekDay, getDay, getMonth, formatAmount} from '../helpers/Helpers';
 
-function SpendingGraph({currentData}) {
+function SpendingGraph({currentData, asdf}) {
     const [selected, setSelected] = useState(null);
     const [hovered, setHovered] = useState(null);
     const clickEl = useRef();
@@ -75,7 +75,7 @@ function SpendingGraph({currentData}) {
     })
 
     return (
-        <section className='graph__container'>
+        <section className={`graph__container ${asdf}`}>
             <div>{renderHeader}</div>
             <div className='graph__canvas' ref={clickEl}>
                 {renderGraph}        

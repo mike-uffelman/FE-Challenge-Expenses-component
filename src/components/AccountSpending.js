@@ -12,6 +12,8 @@ function AccountSpending({data}) {
     );
     const [currentPeriodData, setCurrentPeriodData] = useState(undefined);
     const [priorPeriodData, setPriorPeriodData] = useState(undefined);
+    const [formOpen, setFormOpen] = useState(false);
+
 
     // on initial render and start/end date updates build the graph data arrays and assign to respective state
     useEffect(() => {
@@ -28,11 +30,13 @@ function AccountSpending({data}) {
         setEndDate(fixTimeZone(new Date(end+'T00:00:00')))
     }
 
+    const formBlur = formOpen ? 'blur' : '';
+
     return (
         <section className='spending__container'>
-            {!startDate || !endDate ? undefined : <SpendingForm startDate={startDate} endDate={endDate} onSubmit={submitForm}/> }
+            {!startDate || !endDate ? undefined : <SpendingForm startDate={startDate} endDate={endDate} onSubmit={submitForm} formOpen={formOpen} setFormOpen={setFormOpen}/> }
 
-            {currentPeriodData ? <SpendingGraph currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
+            {currentPeriodData ? <SpendingGraph asdf={formBlur} currentData={currentPeriodData} /> : undefined}
             
             {currentPeriodData ? <SpendingSummary currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
         </section>

@@ -9,12 +9,14 @@
     color: var(--dark-brown);
 }
 
+
+
 .graph__canvas {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 4rem 1rem 0 1rem;
+    padding: 2.5rem 1rem 0 1rem;
     margin: 0 1rem;
     min-height: 20rem;
 
@@ -29,8 +31,6 @@
     flex: 1;
     justify-content: flex-end;
 
-
-    /* max-width: 2rem; */
     min-width: 2rem;
 
     margin: 1rem;
@@ -107,6 +107,10 @@
     font-size: 1.6rem;
     font-family: DM-SansRegular;
     color: var(--medium-brown);
+}
+
+.blur {
+    filter: blur(3px);
 }
 
 @media only screen and (min-width: 26.5rem) {
