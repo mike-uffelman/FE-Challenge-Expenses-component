@@ -16,9 +16,13 @@ function SpendingSummary({currentData, priorData}) {
 
     const spendChange = () => {
         const changeAmount = 
-            Math.round(
-                (Number(sumTotal(currentData)) - Number(sumTotal(priorData))) 
-                    / Number(sumTotal(priorData)) * 100) 
+            
+                (
+                    (Number(sumTotal(currentData)) - Number(sumTotal(priorData))) 
+                    / Number(sumTotal(priorData)) * 100
+                ).toFixed(1); 
+
+                    
 
         return changeAmount >= 0 ? `+${changeAmount}%` : `${changeAmount}%` 
     }

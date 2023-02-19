@@ -1,5 +1,5 @@
 .graph__container {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .graph__header {
@@ -30,9 +30,10 @@
     justify-content: flex-end;
 
 
-    max-width: 2rem;
+    /* max-width: 2rem; */
+    min-width: 2rem;
 
-    margin: .75rem;
+    margin: 1rem;
     overflow: none;
 }
 
@@ -45,12 +46,13 @@
     position: relative;
     align-self: center;
 
-    /* min-width: 2rem; */
+    min-width: 3rem;
     width: 100%;
     
     background-color: var(--soft-red);
     border-radius: .5rem;
     transition: all ease 225ms;
+    margin-bottom: .5rem;
 
     border: none;
 }
@@ -103,18 +105,22 @@
 .graph-bar__labels {
     align-self: center;
     font-size: 1.6rem;
-    font-family: DM-SansBold;
+    font-family: DM-SansRegular;
     color: var(--medium-brown);
 }
 
 @media only screen and (min-width: 26.5rem) {
     .graph-bar__box {
         min-width: 3rem;
+        flex: 1;
     }
     
     .graph-bar--item {
+        
         min-width: 4rem;
         width: 100%;
+        /* min-width: 5rem; */
+
     }
 
     .graph__header {
