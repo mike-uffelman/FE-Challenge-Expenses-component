@@ -102,6 +102,7 @@ export const buildGraphData = (data, endingDate, startingDate) => {
     // reduce each day down to a single object with array of transactions, i.e. combine multi-transaction days into one with a list of transactions
     const reduceDownDates = reduceDailyTransactions(combineTransactions); 
 
+    console.log(reduceDownDates)
     return reduceDownDates
 }
 
