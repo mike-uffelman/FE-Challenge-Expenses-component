@@ -26,9 +26,15 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
+### My additional challenges:
+
+- User should be able to set a a specific date range and view an updated graph
+
 ### Screenshot
 
-![](./public/solution_screenshot.png)
+Screenshot of my solution, note the addition of the 'Options' form.
+
+![Solution showing graph, click/hover states](./src/images/mySolution.png) ![Solution with open form](./src/images/mySolution-form.png)
 
 ### Links
 
@@ -50,9 +56,11 @@ Users should be able to:
 
 The intention for this project was to practice building up a component from a pre-defined design, which included layout, assets (images/svg/data), typography, and a color scheme.
 
-On the surface this component is pretty simple, however to spice it up a bit, I created a generator function with Fakerjs to create additional expenses over many months. The additional data points result in greater functionality for the user and allowed for additional practice using more React features including useState, useEffect, and useRef.
+On the surface this component is pretty simple, so to increase the functionality, I decided to add a form feature that will allow the user to set a date range and see the expenses for that range.
 
-The transaction data provided by the challenge was rather basic, so to add complexity and more substance to the transactions the data generator includes an ID, date, vendor, amount, and category of the expense. Not all of these are used in the current version of the component but could provide useful data for future versions. For example, clicking on a bar graph for a specific day could display all the transactions for that day with the vendor and product categories, which would provide valuable data for the user.
+To achieve this, I created a generator function with Fakerjs to create additional expenses over many months. The additional data points result in greater functionality for the user and allowed for additional practice using more React features including useState, useEffect, and useRef.
+
+The transaction data provided by the challenge was rather basic, so to add complexity and more substance to the transactions the data generator creates an ID, date, vendor, amount, and category of the expense (Note: Not all of these properties are currently used in this version of the component but could provide useful data for future versions. For example, clicking on a bar graph for a specific day could display all the transactions for that day with the vendor and product categories, which would provide valuable data for the user).
 
 By introducing a more comprehensive data set, the data required more transforming and organizing to reach the final usable state. Transforming the raw transaction data from an array of individual transactions to an aggregated array which combined same day transactions into a discrete date objects and creating data for zero spend days there was a good amount of logic to work through.
 
@@ -60,21 +68,25 @@ By introducing a more comprehensive data set, the data required more transformin
 
 The following section is a journey through the functions that transform the raw transaction data into a final object that is mapped over to render the component and it's features.
 
-In the lower right corner of the UI component, the user can see the percent change for spending against the previous period. For example, if the component is showing seven (7) days of data, the change value is percent change from prior week to this week, i.e. ((current - previous)/previous) \* 100.
+In the lower right corner of the UI component, the user can see the percent change for spending against the previous period. For example, if the component is showing seven (7) days of data, the change value is percent change from prior week to this week, ((current - previous)/previous) \* 100.
 
 In order to do this, we have to determine the prior period start date, i.e. the number of days in the current period backwards from the current period start date, e.g. a current period of 1/1/2023 - 1/7/2023 is seven days, so the prior period is 7 days prior (12/25/2022 - 12/31/2022).
 
-### Getting a prior period start date
+Note: Many of these steps could be refactored and combined, but I found that keeping them separate and as close to pure functions as possible improves the readability of the steps.
 
-The below code snippet gets the start date for the prior period by taking the current start date and subtracting the period length from it.
+### Getting the prior period start date
 
-The current start date is passed inside the new Date() constructor, which allows for the setDate() method to be called. Inside setDate(), which changes the date value of the date object calling the method, we take the current start date and subtract the period length (daysBack) to get the prior period start date.
+The code snippet below gets the start date for the prior period by taking the current start date and subtracting the current period length from it.
+
+The current start date is passed inside the new Date() constructor, which allows for the setDate() method to be called. Inside setDate(), which when called on a date object allows for the date (day) to be updated, we take the current start date and subtract the period length (daysBack) to get the prior period start date.
 
 Wrapping it all in 'new Date()', the date will format to the string representation for ease of reading.
 
 ```js
 new Date(new Date(start).setDate(new Date(start).getDate() - daysBack));
 ```
+
+### Getting all days in date range (previous period + current period)
 
 Next an array of dates for each day between the prior period start and the current end date is required. This will allow for an array comparison that will filter out duplicates and return the days which have no transactions. A simple for loop works here, where 'i' is the prior period start date and for 'i' less than or equal to the current end date, a new date will be created for each 'i' and pushed to an array (daysArray) defined prior.
 
@@ -90,9 +102,9 @@ for (
 return daysArray;
 ```
 
-Now that we have a range for the entire date range we've queried, we can find the symmetric differences between all transactions and the desired date range.
+### Get zero spend days
 
-Now that an array for the entire date range is available, the days with zero spending (i.e. do not exist in the transaction data) can be identified. The snippet below checks the transactions array for the date in the desired date range and if it does not exist, create a new object with properties of 'date' as the date missing from data and 'amount' of zero(0) and push the object to an array defined prior. This results in an array of the zero spend days.
+Now that we have a range for the entire date range we've queried, we can find the symmetric differences between all transactions and the desired date range, i.e. the days with zero spending (i.e. do not exist in the transaction data). The snippet below checks the transactions array for the date in the desired date range and if it does not exist, it creates a new object with properties of 'date' as the date missing from data and 'amount' of zero(0) and pushes the object to an array defined prior. This results in an array of the zero spend days.
 
 ```js
 let completeRangeData = [];
@@ -111,6 +123,8 @@ completeRangeData.push(
 return completeRangeData.flat();
 ```
 
+### Get transactions within date range
+
 Next, the transaction data can be filtered by the desired date range. This will result in only the transactions that fall between the prior period start and the current end date.
 
 ```js
@@ -122,6 +136,8 @@ data.filter((a) => {
 });
 ```
 
+### Combining filtered transactions and zero spend days
+
 At this point, the filtered transactions array and the zero spend days array can be combined and sorted by date.
 
 ```js
@@ -132,7 +148,9 @@ const combineZeroAndTransactions = (zeroSpend, filteredTransactions) => {
 };
 ```
 
-And lastly, the array of combined zero spend days and transactions needs to be reduced to an object with each day as a key and an array of transactions as the value. This will allow for multiple transactions on a given day to be combined into a single date property. In the snippet below, the data is reduced down to a single object. Using the current date as a key to access the new object property, the function looks for the property with the given key (i.e. date), if it does not exist then assign an empty array as the value for the key. Then take the key property and push the current data index to the matching key property (i.e. date)
+### Reduce date range transactions
+
+And lastly, the array of combined zero spend days and transactions needs to be reduced to an object with each day as a key and an array of transactions as the value. This will allow for multiple transactions on a given day to be combined into a single date property within an object. Using the current date as a key to access the new object property, the function looks for the property with the given key (i.e. date), if it does not exist then it assigns an empty array as the value for the key. Then it takes the key property and pushes the current data index to the matching key property (i.e. date)
 
 ```js
 const reduceDailyTransactions = (data) => {
@@ -162,7 +180,9 @@ This results in an object like this:
 "2023-01-07": Array [ {…}, {…} ]
 ```
 
-With this reduced data object, it can be passed into each component and render the appropriate information for the user.
+With this reduced data object, it can be passed into each child component and render the appropriate information for the user.
+
+### Additional challenge - Dates
 
 Working with dates in JavaScript can be difficult and frustrating, so in this component dates were converted to strings and the time and timezone values were removed to keep it as simple as possible. For example "2022-10-13T12:44:20" is converted to "2022-10-13". And anytime the date was required for a calculation the date was passed into the new Date() constructor with the time and timezone added back in like this 'new Date("2023-10-13"+"T00:00:00")'.
 
