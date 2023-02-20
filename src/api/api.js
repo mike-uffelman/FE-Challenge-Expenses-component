@@ -1,10 +1,23 @@
 import {faker} from '@faker-js/faker';
+import { fixTimeZone } from '../helpers/Helpers';
 
 
 export const fetchAccount = async() => {
     const response = await fetch('./data.json')
     const data = await response.json();
-    return data.transactions;
+    const adjustDates = convertDates(data.transactions);
+
+    return adjustDates;
+
+    // return data.transactions;
+}
+
+// adjusts data.json dates to ensure on add load, there will always be current dates for demoing
+const convertDates = (data) => {
+    const end = new Date(fixTimeZone(new Date())).getTime();
+    const start = new Date(end - (365 * 24 * 60 * 60 * 1000)).getTime();
+
+    return data.map(trans => Object.assign(trans, {date: fixTimeZone(new Date(start + Math.random() * (end - start)))}))
 }
 
 
