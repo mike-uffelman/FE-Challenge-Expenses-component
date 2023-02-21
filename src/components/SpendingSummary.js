@@ -15,6 +15,9 @@ function SpendingSummary({currentData, priorData}) {
         ).format(sumTotal(currentData)) 
 
     const spendChange = () => {
+        console.log(priorData, currentData)
+        if(!priorData || !currentData) return null;
+        
         const changeAmount = 
             
                 (
@@ -32,11 +35,12 @@ function SpendingSummary({currentData, priorData}) {
             <div className='summary__total'>
                 <header className="total__header">Total this period</header>
                 <div className="total__amount">{currenttotal}</div>
-            </div>
+            </div> 
             <div className="summary__change">
-                <div className='change__amount'>{!priorData || !currentData ? null:  spendChange()}</div>    
+                <div className='change__amount'>{sumTotal(currentData) + sumTotal(priorData) === 0 ? 'no data' : spendChange() }</div>    
                 <div className='change__header'>from previous {priorData.length} days</div>
-            </div>    
+            </div>
+                
         </section>
     )
 }

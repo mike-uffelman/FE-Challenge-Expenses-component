@@ -2,12 +2,20 @@ import './SpendingGraph.css'
 import React, {useState, useEffect, useRef} from 'react'
 import {getWeekDay, getDay, getMonth, formatAmount} from '../helpers/Helpers';
 
-function SpendingGraph({currentData, asdf}) {
+function SpendingGraph({currentData, priorData, graphBlur}) {
     const [selected, setSelected] = useState(null);
     const [hovered, setHovered] = useState(null);
     const clickEl = useRef();
 
     const weekday = Array.from(new Set(currentData.map(day => day.map(d => d.date)).flat()))
+
+    const getAmounts = (data) => {
+        return Object.values(data)
+            .map(day => {
+                return day.reduce((acc, curr) => acc + curr.amount, 0)
+            })
+            .reduce((acc, curr) => acc + curr, 0)
+    }
 
     const graphData = Object.values(currentData)
         .map(day => {
@@ -40,8 +48,6 @@ function SpendingGraph({currentData, asdf}) {
         return () => document.removeEventListener('click', handler)
     }, [])
 
-    // const dateHeader = ` ${getMonth(weekday[0] + 'T00:00:00')} ${getDay(weekday[0] + 'T00:00:00')} to ${getMonth(weekday.at(-1) + 'T00:00:00')} ${getDay((new Date(weekday.at(-1) + 'T00:00:00')))}`
-
     // render the graph header - dynamic date range display
     const renderHeader = <h2 className='graph__header'>Spending - {` ${getMonth(weekday[0] + 'T00:00:00')} ${getDay(weekday[0] + 'T00:00:00')} to ${getMonth(weekday.at(-1) + 'T00:00:00')} ${getDay((new Date(weekday.at(-1) + 'T00:00:00')))}`}</h2>
 
@@ -72,13 +78,14 @@ function SpendingGraph({currentData, asdf}) {
                     <div className='graph-bar__labels' >{graphData.length > 7 ? `${new Date(weekday[i] + "T00:00:00").getMonth() + 1}/${getDay(weekday[i] + 'T00:00:00')}` : getWeekDay(new Date(weekday[i]))}</div>
                 </section>
             )
-    })
+        })
+    
 
     return (
-        <section className={`graph__container ${asdf}`}>
+        <section className={`graph__container ${graphBlur}`}>
             <div>{renderHeader}</div>
             <div className='graph__canvas' ref={clickEl}>
-                {renderGraph}        
+                {getAmounts(currentData) + getAmounts(priorData) === 0 ? <div className='graph__no-data'>No data available to display</div> : renderGraph}        
             </div>
         </section>
     )

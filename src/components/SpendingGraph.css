@@ -23,6 +23,13 @@
     overflow-x: scroll;
 }
 
+.graph__no-data {
+    font-size: 2rem;
+    align-self: center;
+    margin: 0 auto;
+    color: var(--medium-brown);
+    
+}
 
 .graph-bar__box {
     position: relative;

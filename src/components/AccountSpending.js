@@ -36,7 +36,7 @@ function AccountSpending({data}) {
         <section className='spending__container'>
             {!startDate || !endDate ? undefined : <SpendingForm startDate={startDate} endDate={endDate} onSubmit={submitForm} formOpen={formOpen} setFormOpen={setFormOpen}/> }
 
-            {currentPeriodData ? <SpendingGraph asdf={formBlur} currentData={currentPeriodData} /> : undefined}
+            {currentPeriodData ? <SpendingGraph graphBlur={formBlur} currentData={currentPeriodData} priorData={priorPeriodData} /> : undefined}
             
             {currentPeriodData ? <SpendingSummary currentData={currentPeriodData} priorData={priorPeriodData}/> : undefined}
         </section>
