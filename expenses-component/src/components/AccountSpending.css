@@ -1,0 +1,10 @@
+.spending__container {
+    position: relative;;
+    width: 100%;
+    /* padding: 2.2rem; */
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+    background-color: var(--very-pale-orange);
+    overflow: hidden;
+}

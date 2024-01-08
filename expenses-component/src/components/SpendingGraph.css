@@ -1,0 +1,155 @@
+.graph__container {
+    margin-bottom: 2.5rem;
+}
+
+.graph__header {
+    padding: 2.2rem 2.2rem 0 2.2rem;
+    font-size: 2rem;
+    font-family: 'DM-SansBold';
+    color: var(--dark-brown);
+}
+
+
+
+.graph__canvas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 3rem 1rem 0 1rem;
+    margin: 0 1rem;
+    min-height: 20rem;
+
+    overflow-x: scroll;
+}
+
+.graph__no-data {
+    font-size: 2rem;
+    align-self: center;
+    margin: 0 auto;
+    color: var(--medium-brown);
+    
+}
+
+.graph-bar__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+
+    min-width: 2rem;
+
+    margin: 1rem;
+    overflow: none;
+}
+
+.graph-bar__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.graph-bar--item {
+    position: relative;
+    align-self: center;
+
+    min-width: 3rem;
+    width: 100%;
+    
+    background-color: var(--soft-red);
+    border-radius: .5rem;
+    transition: all ease 225ms;
+    margin-bottom: .5rem;
+
+    border: none;
+}
+
+.graph-bar--item:hover {
+    cursor: pointer;
+    background-color: var(--soft-red-hover);
+
+    transition: all ease 225ms;
+}
+
+.selected {
+    background-color: var(--cyan);
+    transition: all ease 225ms;
+}
+
+
+.graph-bar--item.selected:hover {
+    background-color: var(--cyan-hover);
+    transition: all ease 225ms;
+}
+
+.graph-bar--amount {
+    display: none;
+
+    padding: .5rem;
+    border-radius: .5rem;
+
+    opacity: 2;
+    background-color: var(--dark-brown);
+    color: var(--cream);
+    font-size: 1.25rem;
+    font-family: DM-SansBold;
+
+    transition: all ease 225ms;
+}
+
+.showAmount {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    min-width: 100%;
+
+    transform: translateX(-50%);
+}
+
+.graph-bar__labels {
+    align-self: center;
+    font-size: 1.6rem;
+    font-family: DM-SansRegular;
+    color: var(--medium-brown);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+@media only screen and (min-width: 26.5rem) {
+    .graph-bar__box {
+        min-width: 3rem;
+        flex: 1;
+    }
+    
+    .graph-bar--item {
+        
+        min-width: 4rem;
+        width: 100%;
+        /* min-width: 5rem; */
+
+    }
+
+    .graph__header {
+        font-size: 2.8rem;
+    }
+
+    .graph-bar--amount {
+        font-size: 1.6rem;
+    }
+
+    .graph-bar__labels {
+        font-size: 1.8rem;
+    }
+
+    .showAmount {
+        top: -4rem;
+    }
+
+
+
+}
